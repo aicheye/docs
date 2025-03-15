@@ -2,6 +2,11 @@
 
 #set text(lang: "en")
 
+#let frame() = (x, y) => (
+  top: if y <= 1 { 1pt } else { 0pt },
+  bottom: 1pt,
+)
+
 #let mfc = counter("mfc")
 
 #set footnote(numbering: n => context { n - mfc.get().at(0) })
@@ -145,15 +150,14 @@ Control variables:
 + Time and record how long it takes to complete 10 revolutions.
 
 = Observations
-For all trials in #link(<part1>)[Part A] and #link(<part2>)[Part B], the mass of the stopper was 32.9g.
+== Qualitative Observations
+It was difficult to maintain the paperclip at a consistent level. Often, the paperclip would become stuck and not respond as expected to changes in speed. It was also difficult to maintain the rotation on a flat horizontal plane. The paperclip tended to tilt and fall below the top of the tube.
 
-== Part A (Period & Radius) <part1>
+== Quantitative Observations
+For all eight trials in #link(<part1>)[Part A] and #link(<part2>)[Part B], the mass of the stopper was 32.9g.
+
+=== Part A (Period & Radius) <part1>
 Four trials were conducted, starting with the radius at 40cm and increasing by approximately 10cm each trial. For all trials, the weight of the hanging mass was 130g.
-
-#let frame() = (x, y) => (
-  top: if y < 2 { 1pt } else { 0pt },
-  bottom: 1pt,
-)
 
 #align(center, 
   table(
@@ -169,19 +173,21 @@ Four trials were conducted, starting with the radius at 40cm and increasing by a
   )
 )
 
-== Part B (Period & Centripetal Force) <part2>
+=== Part B (Period & Centripetal Force) <part2>
 Four trials were conducted, with the hanging mass at 130g and decreasing by 20g each trial. For all trials, the radius was 50cm.
+
+#mfc.update(0)
 
 #align(center, 
   table(
     columns: 7,
     stroke: frame(),
 
-    table.header[\#][$r$ ($m$)][$m_#text[stopper]$ ($k g$)][$m_#text([hanging])$ ($k g$)][$T$ ($s$)][$f$ ($h z$)][$f^2$ ($h z^2$)],
+    table.header[\#][$r$ ($m$)][$m_#text[stopper]$ ($k g$)][$m_#text([hanging])$ ($k g$)][$T$#super([#sym.dagger]) ($s$)][$f$#super([#sym.dagger#sym.dagger]) ($h z$)][$f^2$ ($h z^2$)],
 
-    [1], [$0.500$], [$0.0329$], [$0.130$], [$0.736$], [$1.36$], [$1.85$],
-    [2], [$0.500$], [$0.0329$], [$0.110$], [$0.749$], [$1.34$], [$1.78$],
-    [3], [$0.500$], [$0.0329$], [$0.090$], [$0.780$], [$1.28$], [$1.64$],
-    [4], [$0.500$], [$0.0329$], [$0.070$], [$0.809$], [$1.24$], [$1.53$]
+    [5], [$0.500$], [$0.0329$], [$0.130$], [$0.736$], [$1.36$], [$1.85$],
+    [6], [$0.500$], [$0.0329$], [$0.110$], [$0.749$], [$1.34$], [$1.78$],
+    [7], [$0.500$], [$0.0329$], [$0.090$], [$0.780$], [$1.28$], [$1.64$],
+    [8], [$0.500$], [$0.0329$], [$0.070$], [$0.809$], [$1.24$], [$1.53$]
   )
 )
