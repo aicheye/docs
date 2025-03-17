@@ -37,7 +37,7 @@ m, b, r = best_fit(x, y)
 
 yfit = [m * xi + b for xi in x]
 
-ax.plot(x, yfit, label=f"Line of Best Fit (m≈{m:.3f}, b≈{sigs(b)})")
+ax.plot(x, yfit, label=f"Line of Best Fit (m≈{m:.3g}, b≈{sigs(b)})")
 
 plt.gca().xaxis.set_major_formatter(FuncFormatter(sigs))
 plt.gca().yaxis.set_major_formatter(FuncFormatter(sigs))
