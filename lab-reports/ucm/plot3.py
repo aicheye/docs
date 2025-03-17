@@ -23,7 +23,7 @@ def best_fit(x, y):
 f, ax = plt.subplots(1)
 
 def sigs(value, tick_number=0):
-    return f"{value:#.3g}"
+    return f"{value:#.3f}"
 
 x = np.array([0.736, 0.749, 0.780, 0.809])
 y = np.array([1.2753, 1.0791, 0.8829, 0.6867])
@@ -37,7 +37,7 @@ m, b, r = best_fit(x, y)
 
 yfit = [m * xi + b for xi in x]
 
-ax.plot(x, yfit, label=f"Line of Best Fit (m≈{sigs(m)}, b≈{sigs(b)})")
+ax.plot(x, yfit, label=f"Line of Best Fit (m≈{m:#.3g}, b≈{sigs(b)})")
 
 plt.gca().xaxis.set_major_formatter(FuncFormatter(sigs))
 plt.gca().yaxis.set_major_formatter(FuncFormatter(sigs))

@@ -299,7 +299,7 @@ The theoretical formula for centripetal force based on the parameters in @tab3 i
 
 #numbered_eq($F_c approx (1.30#text[N]/#text[m]) r$) <eq6>
 
-@eq5 has a offset where @eq6 has none. Although the exact error cannot be calculated, this is a significant amount of error, considering its magnitude. The error for the slope is very low, at around $0.825%$.#footnote[See #link(<work3>)[Appendix C.3.] for calculations.]
+@eq5 has a offset where @eq6 has none. Although the exact error cannot be calculated, this is a significant amount of error, considering its magnitude. The error for the slope is very low, at around $0.825%$.#footnote[See #link(<work3>)[Appendix C.3.] for calculations.] Given the error in y-intercept, this is likely coincidence.
 
 == Part B (Period & Centripetal Force) <part2anal>
 Using the conclusion reached from @forces, the following table can be produced by calculating the centripetal force for each trial from @part2#footnote[See #link(<work4>)[Appendix C.4.] for calculations.]:
@@ -343,14 +343,14 @@ By simply taking the log of $F_c$ and $T$ from @tab4, the following table is obt
   table.header[\#][$log(F_c)$][$r$ ($#text[m]$)][$m_#text[stopper]$ ($#text[kg]$)][$log(T)$],
 
   [5], [$0.106$], [$0.500$], [$0.0329$], [$-0.133$],
-  [6], [$0.0331$], [$0.500$], [$0.0329$], [$-0.126$],
-  [7], [$-0.0540$], [$0.500$], [$0.0329$], [$-0.108$],
-  [8], [$-0.163$], [$0.500$], [$0.0329$], [$-0.0921$],
+  [6], [$0.033$], [$0.500$], [$0.0329$], [$-0.126$],
+  [7], [$-0.054$], [$0.500$], [$0.0329$], [$-0.108$],
+  [8], [$-0.163$], [$0.500$], [$0.0329$], [$-0.092$],
 )
 
 #figure(
   table5,
-  caption: [Data Recorded in #link(<part1>)[Part B] (Centripetal Force and Period), Logarithms]
+  caption: [Data Recorded in #link(<part1>)[Part B] ($F_c$ and $T$), Logarithms]
 ) <tab5>
 
 #pagebreak()
@@ -391,14 +391,14 @@ By taking the log of $F_c$ and $f$ from @tab4, the following table is obtained#f
   table.header[\#][$log(F_c)$][$r$ ($#text[m]$)][$m_#text[stopper]$ ($#text[kg]$)][$log(f)$],
 
   [5], [$0.106$], [$0.500$], [$0.0329$], [$0.133$],
-  [6], [$0.0331$], [$0.500$], [$0.0329$], [$0.126$],
-  [7], [$-0.0540$], [$0.500$], [$0.0329$], [$0.108$],
-  [8], [$-0.163$], [$0.500$], [$0.0329$], [$0.0921$],
+  [6], [$0.033$], [$0.500$], [$0.0329$], [$0.126$],
+  [7], [$-0.054$], [$0.500$], [$0.0329$], [$0.108$],
+  [8], [$-0.163$], [$0.500$], [$0.0329$], [$0.092$],
 )
 
 #figure(
   table6,
-  caption: [Data Recorded in #link(<part1>)[Part B] (Centripetal Force and Frequency), Logarithms]
+  caption: [Data Recorded in #link(<part1>)[Part B] ($F_c$ and $f$), Logarithms]
 ) <tab6>
 
 Using the above data, the below scatter plot can be produced:
@@ -438,7 +438,7 @@ Let $n=4pi^2m$. By inspection:
   $-0.738 &=&& log(n r)$ \
   $-0.738 &=&& log(n (0.500#text[m]))$ \
   $0.5n &=&& 10^(-0.738)$ \
-  $n &approx&& 0.366#footnote[Although $n$ has units (#text[kg]), the units are meaningless in this context as $n$ was a constant created to account for error and thus, the units have been omitted.]$
+  $n &approx&& 0.366#footnote[Although $n$ has units (#text[kg]), the units are meaningless in this context as $n$ was a constant created to account for error in a logarithm and thus, the units have been omitted.]$
 ])
 
 Finding the new y-intercept for $r=1.5#text[m]$:
@@ -482,16 +482,42 @@ When drawing the free body diagram for the stopper considering gravity, it becom
   caption: [Free body diagram of the stopper, considering gravity]
 )
 
-Some tension (resulting from the weight of the hanging mass) must counteract the weight of the stopper in order to prevent it from falling down. This also matches observations in @qualia.
+This free body diagram matches observations in @qualia, where it was noted the stopper would rarely be at the same level as the tube.
 
-Thus, our previous analysis has likely vastly overestimated the centrifugal force acting on the stopper. To account for this inaccuracy, @eq3 and @eq4 should be re-evaluated to incorporate $theta$ and $F_(g #text[ stopper])$.
+Clearly, some tension (resulting from the weight of the hanging mass) must counteract the weight of the stopper to prevent it from falling. 
 
-It may also be prudent to use a lighter stopper or a heavier hanging mass in order to make the weight of the stopper much more smaller relative to the weight of the hanging mass.
+Specifically, 
+
+#align(center, math.equation[
+  $because F_#text[net y] &=&& 0$ \
+  $because F_#text[net y] &=&& F_T sin theta - F_(g 2)$ \
+  $therefore 0 &=&& F_T sin theta - F_(g 2)$ \
+  $therefore F_T sin theta &=&& F_(g 2)$
+])
+
+Similarly on the x-axis, 
+
+#align(center, math.equation[
+  $F_c &=&& F_#text[net x]$ \
+  $F_c &=&& F_T cos theta$
+])
+
+This contradicts @eq3, which claims that $F_c = F_T$.
+
+The error between these two interpretations of $F_c$ grows with larger values of $theta$.
+
+Thus, our previous analysis has likely vastly overestimated the centrifugal force acting on the stopper. To account for this inaccuracy, @eq3 and @eq4 should be replaced with more accurate equations.
+
+Alternatively, it may be possible use a lighter stopper or a heavier hanging mass in order to make the weight of the stopper much more smaller relative to the weight of the hanging mass. 
+
+This arises from the small angle approximation for cosine. 
+
+When $F_T = F_(g_1) >> F_(g 2)$, tension has to compensate less for the weight of the stopper, and $theta$ becomes very small. The small angle approximation tells us that $cos theta approx 1$ and that therefore $F_c approx F_c cos theta$ when $F_(g 1) >> F_(g 2)$.
 
 === Timing
 While timing, group members noticed the difficulty associated with accurately starting and stopping the timer during the proper intervals.
 
-Especially given the small time scales on which this experiment depends, minute errors in timing can result in large discrepancies in the experimental results.
+Especially given the small time scales on which this experiment depends, small errors in timing can result in large discrepancies in experimental results.
 
 Instead of only timing ten revolutions as described in @trial, it may be better to time twenty or even larger numbers of revolutions and to have multiple timers to verify each other's times.
 
@@ -506,6 +532,6 @@ Where $k in ZZ_+$
 
 These conclusions partially verify the hypotheses made in @hyp. 
 
-However, more work needs to be done to verify the value of $k$, which should theoretically be $2$, and eliminate the y-intercept errors found.
+However, more work needs to be done to verify the value of $k$, which should theoretically be $2$, and eliminate the y-intercept errors.
 
-Overall, some general conclusions about the relationship between variables in centripetal force can be made. However, given the high error values $>200%$ found in @part2anal, this report has unfortunately failed to fully verify the theoretical equations for centripetal force.
+Overall, some general conclusions about the relationship between variables in centripetal force can be made. However, given the high error values $>200%$ found in @part2anal as well as the relatively high magnitude of y-intercept found in @part1anal, this report has unfortunately failed to fully verify the theoretical equations for centripetal force.
