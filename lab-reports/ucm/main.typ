@@ -467,7 +467,7 @@ There are likely several factors which contributed to the high level of error se
 === Issues with Assumptions
 A number of assumptions were made in @assume to reduce the complexity of calculations. The two that most likely contributed most to the error observed were neglecting friction and neglecting the force of gravity on the stopper.
 
-As noted in @qualia, it was observed that the paperclip would occasionally not respond to changes in speed. This is undoubtedly due to the friction experienced by the string on the hollow tube. 
+As noted in @qualia, it was observed that the paperclip would occasionally not respond to changes in speed. This is undoubtedly due to the friction experienced by the string on the tube. 
 
 To mitigate this effect, it may be preferable to spin at slower speeds to minimize the centripetal force and thus the reaction force of the tube on the fishing line.
 
@@ -482,7 +482,7 @@ When drawing the free body diagram for the stopper considering gravity, it becom
   caption: [Free body diagram of the stopper, considering gravity]
 )
 
-Some tension (resulting from the weight of the hanging mass) must counteract the weight of the stopper in order to prevent it from falling down.
+Some tension (resulting from the weight of the hanging mass) must counteract the weight of the stopper in order to prevent it from falling down. This also matches observations in @qualia.
 
 Thus, our previous analysis has likely vastly overestimated the centrifugal force acting on the stopper. To account for this inaccuracy, @eq3 and @eq4 should be re-evaluated to incorporate $theta$ and $F_(g #text[ stopper])$.
 
@@ -508,4 +508,4 @@ These conclusions partially verify the hypotheses made in @hyp.
 
 However, more work needs to be done to verify the value of $k$, which should theoretically be $2$, and eliminate the y-intercept errors found.
 
-Overall found in @part2anal, some general conclusions about the relationship between variables in centripetal force can be made. However, given the high error values $>200%$ this report has not fully verified the theoretical equations for centripetal force.
+Overall, some general conclusions about the relationship between variables in centripetal force can be made. However, given the high error values $>200%$ found in @part2anal, this report has unfortunately failed to fully verify the theoretical equations for centripetal force.
