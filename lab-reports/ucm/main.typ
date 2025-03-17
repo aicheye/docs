@@ -382,7 +382,7 @@ Thus, the theoretical slope of a plot between $log(F_c)$ and $log(f)$ should be 
 
 #pagebreak()
 
-By taking the log of $F_c$ and $f$ from @tab4, the following table is obtained#footnote[The values for $log(f)$ are just the negatives of $log(T)$, since $f$ is just the reciprocal of $T$.]:
+By taking the log of $F_c$ and $f$ from @tab4, the following table is obtained:#footnote[The values for $log(f)$ are just the negatives of $log(T)$, since $f$ is just the reciprocal of $T$.]
 
 #let table6 = table(
   columns: 5,
