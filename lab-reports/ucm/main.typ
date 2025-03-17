@@ -1,7 +1,12 @@
 #import "@preview/ilm:1.4.1": *
+#import "defs.typ"
+#import "formulae.typ"
+#import "work.typ"
 
 #set text(lang: "en")
 #set math.equation(numbering: none)
+
+#show figure.where(kind: table): set figure.caption(position: top)
 
 #let frame() = (x, y) => (
   top: if y <= 1 { 1pt } else { 0pt },
@@ -36,29 +41,6 @@
   it
 }
 
-#let definitions = {
-  [
-    = Definitions of Symbols <defs>
-    $F_c$: centripetal force (newtons / $N$)
-
-    $F_g$: weight (newtons / $N$)
-
-    $F_T$: tension (newtons / $N$)
-    
-    $m$: mass (kilograms / $k g$)
-
-    $r$: radius---specifically of the circular path created by an object undergoing uniform circular motion (meters / $m$)
-
-    $v$: velocity---in this report, tangential velocity in particular (meters per second / $m/s$)
-
-    $T$: period---the time it takes an object experiencing uniform circular motion to complete one revolution (seconds / $s$)
-
-    $f$: frequency---the number of revolutions per second (hertz / $h z$ / $s^(-1)$)
-
-    $pi$: the ratio of a circle's circumference to its diameter.
-  ]
-}
-
 #show: ilm.with(
   title: [Uniform Circular Motion: Investigating Centripetal Force, Radius, Period, and Frequency],
   author: "Sean Yang",
@@ -67,13 +49,13 @@
     Lab Partners: Eddie Qu, Wen Zheng Dong \
     Mr. Kanowitz, SPH4U1-23
   ],
-  figure-index: (enabled: true),
-  table-index: (enabled: true),
-  listing-index: (enabled: true),
   appendix: (
     enabled: true,
-    body: definitions,
+    body: [#defs#formulae#work],
   ),
+  listing-index: (enabled: true),
+  figure-index: (enabled: true),
+  table-index: (enabled: true),
 )
 
 = Introduction
@@ -86,7 +68,7 @@ What is the relationship between centripetal force and:
 + Period
 + Frequency
 
-== Hypothesis
+== Hypothesis <hyp>
 Based on the following accepted formulae#footnote[For definitions of symbols, please refer to #link(<defs>)[Appendix A]]:
 
 #align(center, [
@@ -144,7 +126,7 @@ Control variables:
 
 == Setup
 #figure(
-  [#image("setup.png", width: 60%)], 
+  [#image("setup.svg", width: 60%)], 
   caption: [Experimental Setup]
 ) <fig1>
 
@@ -192,7 +174,7 @@ Four trials were conducted, starting with the radius at 40cm and increasing by a
   [4], [$0.710$], [$0.0329$], [$0.130$], [$0.758$], [$1.32$], [$1.74$]
 )
 
-#figure(table1, caption: [Data recorded in #link(<part1>)[Part A]])
+#figure(table1, caption: [Data Recorded in #link(<part1>)[Part A]])
 <tab1>
 
 === Part B (Period & Centripetal Force) <part2>
@@ -211,7 +193,7 @@ Four trials were conducted, with the hanging mass at 130g and decreasing by 20g 
 )
 
 
-#figure(table2, caption: [Data recorded in #link(<part2>)[Part B]])
+#figure(table2, caption: [Data Recorded in #link(<part2>)[Part B]])
 <tab2>
 
 = Analysis
@@ -228,7 +210,7 @@ For all equations, assume that:
 - $#text([up]) = plus.circle$, $#text([down]) = dash.circle$
 - $#text([centripetal]) = plus.circle$, $#text([centrifugal]) = dash.circle$
 
-== Forces Involved
+== Forces Involved <forces>
 As illustrated in @fig2, the only forces acting on the hanging mass are the force of tension on the string and the force of gravity, and these forces oppose each other.
 
 #figure(
@@ -279,18 +261,73 @@ Substituting @eq1 into @eq2:
 
 Therefore, the magnitude of the centripetal force is equal to the magnitude of the weight of the hanging mass.
 
-== Part A (Period & Radius)
-In all trials conducted in #link(<part1>)[Part A], the hanging mass was 130g. 
+== Part A (Period & Radius) <part1anal>
+In all trials conducted in #link(<part1>)[Part A], the hanging mass was 130g. Thus, $F_c approx 1.28N$ for all trials#footnote[See @work1 for calculations.].
 
-Finding $F_c$ for all trials is trivial:
+It is intuitive that when $f=0h z$, $F_c=0N$ (no force at all). Thus, a graph can be plotted for all datapoints in @tab1, drawing a line from the origin, as illustrated in @plot1.
 
-#align(center, math.equation($
-  F_c &&=& F_(g_1) \
-  F_c &&=& F_(g 1) = m g \
-  F_c &&=& 0.130k g times 9.81m/s^2 \
-  F_c &&approx& 1.28N
-$, 
-numbering: none,
-))
+#figure(
+  [#image("plot1.svg", width: 90%)],
+  caption: [Centripetal Force vs. Frequency Squared at Various Radii]
+) <plot1>
 
-= Evaluation <eval>
+A vertical is then drawn at at 1.00hz#super([2]). By reading vertically across each line plotted, the centripetal force for a constant $f^2$ at each corresponding radius was determined:
+
+#let table3 = table(
+  columns: 5,
+  stroke: frame(),
+  table.header[\#][$m_#text[stopper]$ ($k g$)][$f^2$ ($h z^2$)][$r$ ($m$)][$F_c$ $(N)$],
+
+  [1], [$0.0329$], [$1.00$], [$0.410$], [$0.355$],
+  [2], [$0.0329$], [$1.00$], [$0.520$], [$0.439$],
+  [3], [$0.0329$], [$1.00$], [$0.600$], [$0.603$],
+  [4], [$0.0329$], [$1.00$], [$0.710$], [$0.732$],
+)
+
+#figure(table3, caption: [Extrapolated Centripetal Forces at Various Radii]) <tab3>
+
+Clearly, radius and centripetal force are linearly correlated with each other, as illustrated by plotting this data in @plot2. An $r$-value#footnote[Pearson's correlation coefficient. For the formula, please see #link(<formulae>)[Appendix B].] of $0.986$ indicates a very strong positive correlation.
+
+#figure(
+  [#image("plot2.svg", width: 90%)],
+  caption: [Centripetal Force vs. Radius ($r approx 0.986$)]
+) <plot2>
+
+Using the equation for line of best fit from @plot2, the following experimental equation for centripetal force arises:
+
+#numbered_eq([$F_c approx (1.31N/m)r-0.201N$]) <eq4>
+
+The theoretical formula for centripetal force based on the parameters in @tab3 is#footnote[See @work2 for calculations.]:
+
+#numbered_eq($F_c approx (1.30N/m) r$) <eq5>
+
+@eq4 has a offset where @eq5 has none. Although the exact error cannot be calculated, this is a significant amount of error, considering its magnitude. The error for the slope is very low, at around $0.825%$.#footnote[See @work3 for calculations.]
+
+== Part B (Period & Centripetal Force) <part2anal>
+Using the conclusion reached from @forces, it is trivial to calculate the centripetal force for each trial from @part2#footnote[See @work4 for calculations.]:
+
+#let table4 = table(
+  columns: 6,
+  stroke: frame(),
+
+  table.header[\#][$F_c$ $(N)$][$r$ ($m$)][$m_#text[stopper]$ ($k g$)][$T$ ($s$)][$f$ ($h z$)],
+
+  [5], [$1.28$], [$0.500$], [$0.0329$], [$0.736$], [$1.36$],
+  [6], [$1.08$], [$0.500$], [$0.0329$], [$0.749$], [$1.34$],
+  [7], [$0.883$], [$0.500$], [$0.0329$], [$0.780$], [$1.28$],
+  [8], [$0.687$], [$0.500$], [$0.0329$], [$0.809$], [$1.24$],
+)
+
+#figure(
+  table4,
+  caption: [Data Recorded in #link(<part1>)[Part B] (Centripetal Force)]
+) <tab4>
+
+=== Relationship Between Centripetal Force and Period
+Using data in @tab4, a scatter plot can be generated to compare centripetal force and period:
+
+=== Relationship Between Centripetal Force and Period
+Using the data from @tab4, a scatter plot can be created to compare centripetal force to frequency:
+
+
+= Evaluation and Conclusion <eval>
