@@ -25,7 +25,7 @@ f, ax = plt.subplots(1)
 def sigs(value, tick_number=0):
     return f"{value:#.3g}"
 
-x = np.array([0.736, 0.749, 0.780, 0.809])
+x = np.array([1/0.736, 1/0.749, 1/0.780, 1/0.809])
 y = np.array([1.2753, 1.0791, 0.8829, 0.6867])
 
 x = [np.log10(_) for _ in x]
@@ -43,9 +43,9 @@ plt.gca().xaxis.set_major_formatter(FuncFormatter(sigs))
 plt.gca().yaxis.set_major_formatter(FuncFormatter(sigs))
 
 ax.set_ylabel("Logarithm of Centripetal Force")
-ax.set_xlabel("Logarithm of Period")
+ax.set_xlabel("Logarithm of Frequency")
 
-plt.title("Logarithm of Centripetal Force vs. Logarithm of Period")
+plt.title("Logarithm of Centripetal Force vs. Logarithm of Frequency")
 
 plt.legend()
 
