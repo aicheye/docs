@@ -25,8 +25,8 @@ f, ax = plt.subplots(1)
 def sigs(value, tick_number=0):
     return f"{value:#.3g}"
 
-x = np.array([0.410, 0.520, 0.600, 0.710])
-y = np.array([0.355150463, 0.4388266667, 0.6031237963, 0.7321396296])
+x = np.array([np.log10(0.410), np.log10(0.520), np.log10(0.600), np.log10(0.710)])
+y = np.array([np.log10(0.355150463), np.log10(0.4388266667), np.log10(0.6031237963), np.log10(0.7321396296)])
 
 ax.scatter(x, y)
 
@@ -34,15 +34,15 @@ m, b, r = best_fit(x, y)
 
 yfit = [m * xi + b for xi in x]
 
-ax.plot(x, yfit, label=f"Line of Best Fit (m≈{sigs(m)}N/m, b≈{sigs(b)}N/m)")
+ax.plot(x, yfit, label=f"Line of Best Fit (m≈{sigs(m)}, b≈{sigs(b)})")
 
 plt.gca().xaxis.set_major_formatter(FuncFormatter(sigs))
 plt.gca().yaxis.set_major_formatter(FuncFormatter(sigs))
 
-ax.set_ylabel("Centripetal Force (N)")
-ax.set_xlabel("Radius (m)")
+ax.set_ylabel("Logarithm of Centripetal Force")
+ax.set_xlabel("Logarithm of Radius")
 
-plt.title("Centripetal Force vs. Radius")
+plt.title("Logarithm of Centripetal Force vs. Logarithm of Radius")
 
 plt.legend()
 
