@@ -302,7 +302,7 @@ The theoretical formula for centripetal force based on the parameters in @tab3 i
 @eq5 has a offset where @eq6 has none. Although the exact error cannot be calculated, this is a significant amount of error, considering its magnitude. The error for the slope is very low, at around $0.825%$.#footnote[See #link(<work3>)[Appendix C.3.] for calculations.] Given the error in y-intercept, this is likely coincidence.
 
 == Part B (Period & Centripetal Force) <part2anal>
-Using the conclusion reached from @forces, the following table can be produced by calculating the centripetal force for each trial from @part2#footnote[See #link(<work4>)[Appendix C.4.] for calculations.]:
+Using the conclusion reached from @forces, the following table can be produced by calculating the centripetal force for each trial from @part2:#footnote[See #link(<work4>)[Appendix C.4.] for calculations.]
 
 #let table4 = table(
   columns: 6,
@@ -364,7 +364,7 @@ The following scatter plot and line of best fit can be generated from the data i
 
 Visually, the data displays a strong negative correlation. The $r$-value of $-0.995$ indicates an almost exact linear correlation.
 
-However, the slope and y-intercept both show high levels of deviation from the theoretical values derived from @eq1, at $213%$ and $294%$, respectively#footnote[See #link(<work5>)[Appendix C.5.] and #link(<work6>)[Appendix C.6.] for calculations.].
+However, the slope and y-intercept both show high levels of deviation from the theoretical values derived from @eq1, at $213%$ and $294%$, respectively.#footnote[See #link(<work5>)[Appendix C.5.] and #link(<work6>)[Appendix C.6.] for calculations.]
 
 === Relationship Between Centripetal Force & Frequency <part2anal2>
 Much of the techniques used in this section will be similar to the techniques used in @part2anal1.
