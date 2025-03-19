@@ -57,6 +57,7 @@
   figure-index: (enabled: true),
   table-index: (enabled: true),
   bibliography: bibliography("refs.bib"),
+  paper-size: "us-letter",
 )
 
 = Introduction
@@ -126,7 +127,7 @@ Control variables:
 == Setup
 #figure(
   [#image("setup.svg", width: 60%)], 
-  caption: [Experimental Setup#super[@bruni_2012_nelson]]
+  caption: [Experimental Setup @bruni_2012_nelson]
 ) <fig1>
 
 = Procedure
@@ -233,9 +234,7 @@ Thus,
 
 #numbered_eq($F_T = F_(g 1)$) <eq2>
 
-#pagebreak()
-
-As illustrated in @fig3, the only force acting on the stopper is the force of tension (recall that it was assumed that the force of gravity is negligible in @assume). Thus, this is also the net force.
+As illustrated below in @fig3, the only force acting on the stopper is the force of tension (recall that it was assumed that the force of gravity is negligible in @assume). Thus, this is also the net force.
 
 #figure(
   [#image("fbd2.svg", width: 20%)],
@@ -346,11 +345,9 @@ The following experimental equation for centripetal force arises:
 
 The error in $n_1$ is $36.7%$ (by inspection), and the error in $k_1$ is about $10.5%$, which is within experimental error.#footnote[See #link(<work3>)[Appendix C.3.] for calculations.]
 
-#pagebreak()
-
 == Part B (Period & Centripetal Force) <part2anal>
 Using the conclusion reached from @forces, the following table can be produced by calculating the centripetal force for each trial from @part2:#footnote[See #link(<work4>)[Appendix C.4.] for calculations.]
-
+#pagebreak()
 #let table4 = table(
   columns: 6,
   stroke: frame(),
@@ -439,8 +436,6 @@ The experimental results can now be represented in the log-linearized form of th
 
 Both $n_2$ and $k_2$ show high levels of deviation from the theoretical values, at $213%$ and $63.7%$, respectively.#footnote[See #link(<work5>)[Appendix C.5.] and #link(<work6>)[Appendix C.6.] for calculations.]
 
-#pagebreak()
-
 === Relationship Between Centripetal Force & Frequency <part2anal2>
 Many techniques used in this section will be similar to techniques used in @part2anal1. Applying log-linearization, the following relationship is obtained between $log(F_c)$ and $log(f)$:
 
@@ -483,9 +478,7 @@ First, by taking the log of $F_c$ and $f$ from @tab4, the following table is obt
   caption: [Data Recorded in #link(<part1>)[Part B] ($F_c$ and $f$), Logarithms]
 ) <tab6>
 
-#pagebreak()
-
-Using data from @tab6, the below plot was be produced:
+Using data from @tab6, the below plot was produced:
 
 #figure(
   [#image("plot4.svg", width: 80%)],

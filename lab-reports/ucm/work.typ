@@ -9,6 +9,8 @@ Using @eq4 from @forces, we simply plug in known values:
   $F_c &=&& 1.28#[N]$
 ])
 
+#pagebreak()
+
 == Theoretical Formula for $F_c$ in @part1anal <work2>
 A suitable formula for centripetal force was derived in @hyp:
 
