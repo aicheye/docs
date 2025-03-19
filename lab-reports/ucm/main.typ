@@ -311,7 +311,7 @@ Next, the log-linearization technique can be applied on @eq1:
 Substituting $m = 0.0329#[kg]$ and $f^2=1.00#[Hz]^2$ into the above equation yields:#footnote[See #link(<work2>)[Appendix C.2.] for calculations.]
 
 #align(center, math.equation[
-  $log(F_c) approx log(r) - log(1.30#[N]/#[m])$ \
+  $log(F_c) approx log(r) + log(1.30#[N]/#[m])$ \
 ])
 
 The remainder of this section will produce an equivalent experimental formula in the form:
@@ -355,7 +355,7 @@ $n_1$ is simply the slope in the line of best fit in @plot2 and $k_1$ can be cal
 The following experimental equation for centripetal force arises:
 
 #align(center, math.equation[
-  $log(F_c) approx 1.367log(r) - log(1.16#[N]/#[m])$
+  $log(F_c) approx 1.367log(r) - log(1.16#[N]/#[m])$ \
   $log(F_c) approx 1.37log(r) - log(1.16#[N]/#[m])$
 ])
 
@@ -452,6 +452,8 @@ The experimental results can now be represented in the log-linearized form of th
 
 Both $n_2$ and $k_2$ show high levels of deviation from the theoretical values, at $213%$ and $63.7%$, respectively.#footnote[See #link(<work5>)[Appendix C.5.] and #link(<work6>)[Appendix C.6.] for calculations.]
 
+#pagebreak()
+
 === Relationship Between Centripetal Force & Frequency <part2anal2>
 Many techniques used in this section will be similar to techniques used in @part2anal1. Applying log-linearization, the following relationship is obtained between $log(F_c)$ and $log(f)$:
 
@@ -494,10 +496,12 @@ First, by taking the log of $F_c$ and $f$ from @tab4, the following table is obt
   caption: [Data Recorded in #link(<part1>)[Part B] ($F_c$ and $f$), Logarithms]
 ) <tab6>
 
+#pagebreak()
+
 Using data from @tab6, the below plot was produced:
 
 #figure(
-  [#image("plot4.svg", width: 80%)],
+  [#image("plot4.svg", width: 90%)],
   caption: [Logarithm of Centripetal Force vs. Logarithm of Frequency ($r=0.995$)]
 ) <plot4>
 
@@ -553,10 +557,10 @@ The below table summarizes errors found in @anal for relevant parameters:
   table.header[Parameter][Description][Theoretical][Actual][Error],
 
   [$n_1$], [Exponent on $r$ in #link(<eq10>)[Eqn. (7)]], [$1$], [$1.37$], [$36.7%$],
-  [$k_1$], [Coefficient of $r^(n_1)$ in #link(<eq10>)[Eqn. (8)]], [$1.30$], [$1.16$], [$10.5%$],
-  [$n_2$], [Exponent on $T$ in #link(<eq11>)[Eqn. (9)]], [$2$], [$6.27$], [$213%$],
-  [$k_2$], [Coefficient of $r^(n_1)T^(n_2)$ in #link(<eq11>)[Eqn. (9)]], [], [], [$63.7%$],
-  [$n_3$], [Exponent on $f$ #link(<eq12>)[Eqn. (10)]], [], [], [$213%$],
+  [$k_1$], [Coefficient of $r^(n_1)$ in #link(<eq10>)[Eqn. (8)]], [$1.30#[N]/#[m]$], [$1.16#[N]/#[m]$], [$10.5%$],
+  [$n_2$], [Exponent on $T$ in #link(<eq11>)[Eqn. (9)]], [$-2$], [$-6.27$], [$213%$],
+  [$k_2$], [Coefficient of $r^(n_1)T^(n_2)$ in #link(<eq11>)[Eqn. (9)]], [$1.30#[kg]$], [$0.471#[kg]$], [$63.7%$],
+  [$n_3$], [Exponent on $f$ #link(<eq12>)[Eqn. (10)]], [2], [6.27], [$213%$],
 ), caption: [Summary of Errors])
 
 There are likely several factors which contributed to the high level of error seen in this report. The remainder of this section will attempt to address the most exorbitant sources and suggest solutions to mitigate this error.
@@ -598,9 +602,9 @@ Thus, our previous analysis has likely vastly overestimated the centrifugal forc
 
 Alternatively, it may be possible use a lighter stopper or a heavier hanging mass in order to make the weight of the stopper much more smaller relative to the weight of the hanging mass. 
 
-This arises from the small angle approximation for cosine. 
+This arises from the small angle approximation for cosine:
 
-When $F_T = F_(g_1) >> F_(g 2)$, tension has to compensate less for the weight of the stopper, and $theta$ becomes very small. The small angle approximation tells us that $cos theta approx 1$ and that therefore $F_c approx F_c cos theta$ when $F_(g 1) >> F_(g 2)$.
+When $F_(g_1) = F_T >> F_(g 2)$, tension has to compensate less for the weight of the stopper, and $theta$ becomes very small. The small angle approximation tells us that $cos theta approx 1$ and that therefore $F_c approx F_c cos theta$ when $F_(g 1) >> F_(g 2)$.
 
 === Timing
 While timing, group members noticed the difficulty associated with accurately starting and stopping the timer during the proper intervals.
