@@ -63,7 +63,7 @@
     #align(center + horizon)[
       #strong[Uniform Circular Motion: Investigating Centripetal Force, Radius, \ Period and Frequency]
       \ \ \
-      Sean Yang
+      #strong[Sean Yang], Eddie Qu, Wen Zheng Dong
       
       A. Y. Jackson Secondary School
 
