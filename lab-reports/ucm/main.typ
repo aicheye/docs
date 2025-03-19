@@ -58,6 +58,22 @@
   table-index: (enabled: true),
   bibliography: bibliography("refs.bib"),
   paper-size: "us-letter",
+  preface:
+  [
+    #align(center + horizon)[
+      #strong[Uniform Circular Motion: Investigating Centripetal Force, Radius, \ Period and Frequency]
+      \ \ \
+      Sean Yang
+      
+      A. Y. Jackson Secondary School
+
+      SPH4U1-23
+
+      Mr. Gavin Kanowitz
+
+      March 19, 2025
+    ]
+  ],
 )
 
 = Introduction
