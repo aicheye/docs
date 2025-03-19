@@ -60,7 +60,7 @@
 
 = Introduction
 == Purpose
-This report seeks to examine the effect of centripetal force on variables essential to uniform circular motion.
+This report seeks to examine the relationship between centripetal force and variables essential to uniform circular motion.
 
 == Question
 What is the relationship between centripetal force and:
@@ -96,7 +96,7 @@ Responding variable:
 
 Control variables:
 - Centripetal force ($F_c$)
-- Mass of the object experiencing uniform circular motion ($#[m]$)
+- Mass of the object experiencing uniform circular motion ($m$)
 
 == Part B (Period & Centripetal Force)
 Manipulated variable: 
@@ -107,7 +107,7 @@ Responding variable:
 
 Control variables:
 - Radius of the path of circular motion ($r$)
-- Mass of the object experiencing uniform circular motion ($#[m]$)
+- Mass of the object experiencing uniform circular motion ($m$)
 
 = Equipment and Materials
 - Rubber stopper
@@ -134,7 +134,7 @@ Control variables:
 + Approximately 1 meter of string was measured and cut.
 + A rubber stopper was tied to one end of the string.
 + The other end of the string was threaded through the hollow tube.
-+ The desired radius was measured as shown in @fig1. The tube was fixed in place to mark this length.
++ The desired radius was measured as shown in @fig1. The tube was held in place to mark this length.
 + A paperclip was taped securely to the string at the other end of the tube.
 + The desired hanging mass was tied to the loose end of the string.
 
@@ -339,10 +339,11 @@ $n_1$ is simply the slope in the line of best fit in @plot2 and $k_1$ can be cal
 The following experimental equation for centripetal force arises:
 
 #align(center, math.equation[
+  $log(F_c) approx 1.367log(r) - log(1.16#[N]/#[m])$
   $log(F_c) approx 1.37log(r) - log(1.16#[N]/#[m])$
 ])
 
-The error in $n_1$ is $37.0%$ (by inspection), and the error in $k_1$ is about $10.5%$, which is within experimental error.#footnote[See #link(<work3>)[Appendix C.3.] for calculations.]
+The error in $n_1$ is $36.7%$ (by inspection), and the error in $k_1$ is about $10.5%$, which is within experimental error.#footnote[See #link(<work3>)[Appendix C.3.] for calculations.]
 
 #pagebreak()
 
@@ -502,7 +503,7 @@ $n_3$ is simply the slope of the line of best fit in @plot4 (about $6.27$).
 
 The log-linearized formula for $F_c$ vs. $f$ is therefore:
 
-#numbered_eq($log(F_c) approx 6.27log(f) + log((0.471#[kg ])r^1.37)$) <eq8>
+#numbered_eq($log(F_c) approx 6.27log(f) + log((0.471#[kg])r^1.37)$) <eq8>
 
 However, this also means that the errors for $n_3$ and $k_2$ are equally as high as in @part2anal1, at $213%$ and $63.7%$, respectively.#footnote[See #link(<work7>)[Appendix C.7.] and #link(<work6>)[Appendix C.6], respectively, for calculations.]
 
@@ -541,7 +542,7 @@ The below table summarizes errors found in @anal for relevant parameters:
 
   table.header[Parameter][Description][Theoretical][Actual][Error],
 
-  [$n_1$], [Exponent on $r$ in #link(<eq10>)[Eqn. (7)]], [$1$], [$1.37$], [$37.0%$],
+  [$n_1$], [Exponent on $r$ in #link(<eq10>)[Eqn. (7)]], [$1$], [$1.37$], [$36.7%$],
   [$k_1$], [Coefficient of $r^(n_1)$ in #link(<eq10>)[Eqn. (8)]], [$1.30$], [$1.16$], [$10.5%$],
   [$n_2$], [Exponent on $T$ in #link(<eq11>)[Eqn. (9)]], [$2$], [$6.27$], [$213%$],
   [$k_2$], [Coefficient of $r^(n_1)T^(n_2)$ in #link(<eq11>)[Eqn. (9)]], [], [], [$63.7%$],
