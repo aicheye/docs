@@ -56,6 +56,7 @@
   listing-index: (enabled: true),
   figure-index: (enabled: true),
   table-index: (enabled: true),
+  bibliography: bibliography("refs.bib"),
 )
 
 = Introduction
@@ -125,7 +126,7 @@ Control variables:
 == Setup
 #figure(
   [#image("setup.svg", width: 60%)], 
-  caption: [Experimental Setup]
+  caption: [Experimental Setup#super[@bruni_2012_nelson]]
 ) <fig1>
 
 = Procedure
