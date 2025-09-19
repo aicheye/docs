@@ -1,0 +1,169 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jskherman/imprecv/main/cv.typ.schema.json
+
+personal:
+  name: Sean Yang
+  email: contact@seanyang.me
+  phone: +1 (416) 578 - 8646
+  url: https://seanyang.me
+  titles:
+    - Student
+    - Software Engineer
+  location:
+    city: Waterloo
+    region: Ontario
+    country: Canada
+  profiles:
+    - network: LinkedIn
+      username: Sean Yang
+      url: https://linkedin.com/in/syang07
+    - network: GitHub
+      username: aicheye
+      url: https://github.com/aicheye
+
+work:
+  - organization: The STEAM Project
+    url: null
+    location: Richmond Hill, Ontario
+    positions:
+      - position: Jr. Camp Counsellor
+        startDate: 2024-06-01
+        endDate: 2024-08-31
+        highlights:
+          - Supervised groups of 10-20 children while coordinating daily schedules and safety
+          - Assisted with engineering-focused workshops such as building wooden toys using laser-cut components
+          - Collaborated with counsellors to adapt activities in real time and keep participants engaged
+
+education:
+  - institution: University of Waterloo
+    url: https://uwaterloo.ca/
+    area: null
+    studyType: Candidate for Bachelor of Software Engineering
+    startDate: 2025-09-01
+    endDate: 2030-06-30
+    location: Waterloo, Ontario
+    honors: null
+    courses: null
+    highlights:
+      - "*Activities*: Onboarding for Waterloo Reality Labs (Unity/PyTorch), Watonomous (ROS2), active on Quizbowl Team"
+
+affiliations:
+  - organization: AYJ Coding Club
+    url: null
+    location: North York, Ontario
+    position: Senior Lecturer & Problem Setter
+    startDate: 2024-06-01
+    endDate: "present"
+    highlights:
+      - Led bi-weekly lectures on advanced programming topics including recursion, dynamic programming, graph algorithms, and trees
+      - Authored original competitive programming problems in C++ with 250+ total submissions from students
+      - Implemented custom graders to support automated evaluation of problems on the club's C++ online judge
+
+awards:
+  - title: Certificates of Distinction in the Euclid, CSMC, & CCC (Sr. Div.) Contests
+    url: null
+    date: 2025-06-01
+    issuer: University of Waterloo Centre for Education in Mathematics and Computing (CEMC)
+    location: North York, Ontario
+    highlights:
+      - Achieved top 25% nationally across multiple mathematics and programming contests
+  - title: Computer Science & Chemistry Excellence Awards
+    url: null
+    date: 2025-06-01
+    issuer: A.Y. Jackson Secondary School
+    location: North York, Ontario
+    highlights:
+      - Recognized among top students in Computer Science and Chemistry over four years of study
+
+projects:
+  - name: seanyang.me
+    url: https://seanyang.me
+    startDate: 2025-02-01
+    affiliation: Personal Project
+    endDate: "present"
+    highlights:
+      - Built and deployed a personal portfolio website from scratch using Tailwind CSS, React, and Next.js
+      - Integrated a serverless REST API with Google Cloud Run for dynamic content, chosen for cost efficiency and simplicity
+      - Designed UI/UX independently, achieving a 100/100 accessibility score on Google Lighthouse
+      - Deployed with Netlify CI/CD, custom domain, and HTTPS; reached 1.04k unique visitors in the last 30 days
+
+  - name: aicheye's Combat Tagging
+    url: https://github.com/aicheye/combat-tag
+    startDate: 2025-03-01
+    affiliation: Personal Project
+    endDate: "present"
+    highlights:
+      - Developed a Minecraft mod (700 LOC, 10 classes) in Java with Gradle to enhance default combat mechanics
+      - Applied OOP design, event handling, and resource management to ensure stable performance on hardware-limited servers
+      - Iterated on features based on community feedback, reaching 390+ downloads worldwide on Modrinth
+
+  - name: Quoridor
+    url: https://github.com/aicheye/quoridor
+    startDate: 2024-05-01
+    endDate: 2024-06-30
+    affiliation: A.Y. Jackson Secondary School
+    highlights:
+      - Implemented the full strategy game Quoridor in Java (1.7k LOC, 5 classes) as a solo project
+      - Designed a minimax-based game agent and improved runtime by 100x using alpha-beta pruning and transposition caching
+      - Developed pathfinding algorithms and heuristic ordering to strengthen AI move selection
+      - Documented all classes with Javadocs to ensure maintainability and clarity
+
+skills:
+  - category: Soft Skills
+    skills:
+      - Critical Thinking
+      - Leadership
+      - Conflict Resolution
+  - category: Programming
+    skills:
+      - Java
+      - C/C++
+      - Python
+      - JavaScript
+      - Tailwind CSS
+      - React
+      - Next.js
+      - ROS 2
+      - LaTeX
+      - SQL (Supabase)
+  - category: Tools
+    skills:
+      - Unix/Unix-like Systems
+      - Git
+      - CI/CD
+      - Docker
+      - Overleaf
+      - Figma
+      - Foxglove Studio
+
+languages:
+  # - language: English
+  #   fluency: Native speaker
+  # - language: Mandarin Chinese
+  #   fluency: Native speaker
+  # - language: French
+  #   fluency: Basic proficiency
+
+interests:
+  - Films
+  - Political Philosophy
+  - Swimming
+  - Biking
+  - Poetry
+
+certificates:
+  # - name: "Learning How to Learn: Powerful mental tools to help you master tough subjects"
+  #   date: 2021-09-01
+  #   issuer: Coursera
+  #   url: https://example.com
+  #   id: "1MPR3CVR3SUM3"
+
+publications:
+  # - name: A convolutional neural network for predicting Greenland glacier melt and glacial water flow
+  #   publisher: Theoretical and Computational Fluid Dynamics
+  #   releaseDate: 2020-09-30
+  #   url: https://example.com
+
+references:
+  # - name: Dr. Jane Austin
+  #   reference: John was a great student. He was always eager to learn new things and was very passionate about his studies. As his mentor, I am proud to say that he was also a great leader and was able to lead his team to victory in the 2020 SCG Bangkok Business Challenge Global Competition.
+  #   url: https://janeaustin.com
