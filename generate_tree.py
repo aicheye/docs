@@ -1,0 +1,51 @@
+import os
+
+EXCLUDE = {".git", ".github", "README.md", "CNAME", "favicon.ico", "generate_tree.py"}
+ROOT = os.path.dirname(os.path.abspath(__file__))
+
+def get_readme_header(readme_path):
+    with open(readme_path, "r") as f:
+        lines = []
+        for line in f:
+            if line.strip() == "":
+                break
+            lines.append(line.rstrip("\n"))
+        return lines
+
+def make_link(path, name):
+    return f"[{name}]({path})  "
+
+def scan_dir(base, rel=""):
+    items = []
+    for entry in sorted(os.listdir(os.path.join(base, rel))):
+        if entry in EXCLUDE:
+            continue
+        full_path = os.path.join(base, rel, entry)
+        rel_path = os.path.join(rel, entry)
+        if os.path.isdir(full_path):
+            sub_items = scan_dir(base, rel_path)
+            items.append((entry, rel_path, sub_items))
+        else:
+            items.append((entry, rel_path, None))
+    return items
+
+def render_tree(items, prefix="", is_last=True):
+    lines = []
+    for idx, (name, path, children) in enumerate(items):
+        line = f"{prefix}- {make_link(path, name)}  "
+        lines.append(line)
+        if children:
+            extension = "    "  # 4 spaces for each indent level
+            lines.extend(render_tree(children, prefix + extension, is_last=True))
+    return lines
+
+def main():
+    readme_path = os.path.join(ROOT, "README.md")
+    header_lines = get_readme_header(readme_path)
+    tree = scan_dir(ROOT)
+    tree_lines = ["", "## Directory Tree", *render_tree(tree)]
+    with open(readme_path, "w") as f:
+        f.write("\n".join(header_lines + tree_lines) + "\n")
+
+if __name__ == "__main__":
+    main()
