@@ -14,8 +14,7 @@ Using @eq4 from @forces, we simply plug in known values:
 == Theoretical Formula for $F_c$ in @part1anal <work2>
 A suitable formula for centripetal force was derived in @hyp:
 
-#align(center,
-[$F_c = 4 pi^2 m r f^2$])
+#align(center, [$F_c = 4 pi^2 m r f^2$])
 
 Plugging in $m = m_#[stopper]=0.0329#[kg]$ and $f^2 = 1.00#[Hz]^2$:
 
@@ -37,7 +36,7 @@ Given: $#[experimental] = 1.162487831#[N]/#[m]$, $#[theoretical] = 1.298839939#[
 
 #align(center, math.equation[
   $#[% error] &=&& |frac(#[experimental] - #[theoretical], #[theoretical])| times 100%$ \
-  $#[% error] &=&& |frac(1.162487831#[N]/#[m] - 1.298839939#[N]/#[m], 1.298839939#[N]/#[m])| times 100% $ \
+  $#[% error] &=&& |frac(1.162487831#[N]/#[m] - 1.298839939#[N]/#[m], 1.298839939#[N]/#[m])| times 100%$ \
   $#[% error] &=&& |frac(-0.136352107, 1.298839939)| times 100%$ \
   $#[% error] &=&& 0.104979915 times 100%$ \
   $#[% error] &approx&& 10.5%$
@@ -60,20 +59,20 @@ Given: $#[experimental] = -6.266518067$, $#[theoretical] = -2$
 
 #align(center, math.equation[
   $#[% error] &=&& |frac(#[experimental] - #[theoretical], #[theoretical])| times 100%$ \
-  $#[% error] &=&& |frac(-6.266518067 - (-2), -2)| times 100% $ \
+  $#[% error] &=&& |frac(-6.266518067 - (-2), -2)| times 100%$ \
   $#[% error] &=&& |frac(-4.266518067, -2)| times 100%$ \
   $#[% error] &=&& 2.133259034 times 100%$ \
   $#[% error] &approx&& 213%$
 ])
 
 == Errors for $k_2$ in @part2anal1 & @part2anal2 <work6>
-Given: 
+Given:
 - $#[experimental] = 0.471311824#[kg]$
-- $#[theoretical] = 4 pi^2 m =&& 4 pi^2 (0.0329#[kg]) = 1.298839939#[kg]$ 
+- $#[theoretical] = 4 pi^2 m =&& 4 pi^2 (0.0329#[kg]) = 1.298839939#[kg]$
 
 #align(center, math.equation[
   $#[% error] &=&& |frac(#[experimental] - #[theoretical], #[theoretical])| times 100%$ \
-  $#[% error] &=&& |frac(0.471311824 - 1.298839939, 1.298839939)| times 100% $ \
+  $#[% error] &=&& |frac(0.471311824 - 1.298839939, 1.298839939)| times 100%$ \
   $#[% error] &=&& |frac(-0.827528115, 1.298839939)| times 100%$ \
   $#[% error] &=&& 0.637 times 100%$ \
   $#[% error] &approx&& 63.7%$
@@ -84,7 +83,7 @@ Given: $#[experimental] = 6.266518067$, $#[theoretical] = 2$
 
 #align(center, math.equation[
   $#[% error] &=&& |frac(#[experimental] - #[theoretical], #[theoretical])| times 100%$ \
-  $#[% error] &=&& |frac(6.266518067 - 2, 2)| times 100% $ \
+  $#[% error] &=&& |frac(6.266518067 - 2, 2)| times 100%$ \
   $#[% error] &=&& |frac(4.266518067, 2)| times 100%$ \
   $#[% error] &=&& 2.133259034 times 100%$ \
   $#[% error] &approx&& 213%$

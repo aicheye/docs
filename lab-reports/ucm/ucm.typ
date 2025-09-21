@@ -33,7 +33,7 @@
 #set footnote(numbering: n => context { n - mfc.get().at(0) })
 
 #show math.equation: it => {
-  set footnote(numbering: n => context {[#sym.dagger] * (mfc.get().at(0) + 1) })
+  set footnote(numbering: n => context { [#sym.dagger] * (mfc.get().at(0) + 1) })
   show footnote: it => {
     it
     mfc.step()
@@ -65,9 +65,9 @@
   //     #strong[Uniform Circular Motion: Investigating Centripetal Force, Radius, \ Period and Frequency]
   //     \ \ \
   //     Sean Yang
-      
+
   //     Lab Partners: Eddie Qu, Wen Zheng Dong
-      
+
   //     A. Y. Jackson Secondary School
 
   //     SPH4U1-23
@@ -109,10 +109,10 @@ Therefore, it is implicated that:
 
 = Variables
 == Part A (Period & Radius)
-Manipulated variable: 
+Manipulated variable:
 - Radius of the path of circular motion ($r$)
 
-Responding variable: 
+Responding variable:
 - Period ($T$)
 
 Control variables:
@@ -120,10 +120,10 @@ Control variables:
 - Mass of the object experiencing uniform circular motion ($m$)
 
 == Part B (Period & Centripetal Force)
-Manipulated variable: 
+Manipulated variable:
 - Centripetal force ($F_c$)
 
-Responding variable: 
+Responding variable:
 - Period ($T$)
 
 Control variables:
@@ -145,8 +145,8 @@ Control variables:
 
 == Setup
 #figure(
-  [#image("figures/setup.svg", width: 60%)], 
-  caption: [Experimental Setup @bruni_2012_nelson]
+  [#image("figures/setup.svg", width: 60%)],
+  caption: [Experimental Setup @bruni_2012_nelson],
 ) <fig1>
 
 = Procedure
@@ -171,7 +171,7 @@ Control variables:
 
 = Observations
 == Qualitative Observations <qualia>
-It was difficult to maintain the paperclip at a consistent level. Often, the paperclip would become stuck and not respond as expected to changes in speed. 
+It was difficult to maintain the paperclip at a consistent level. Often, the paperclip would become stuck and not respond as expected to changes in speed.
 
 It was also noted that it was difficult to maintain the rotation on a flat horizontal plane. The stopper's axis of rotation often tilted, and the stopper's plane of rotation tended to be below the top of the tube.
 
@@ -190,7 +190,7 @@ Four trials were conducted, starting with the radius at 40cm and increasing by a
   [1], [$0.410$], [$0.0329$], [$0.130$], [$0.528$], [$1.89$], [$3.59$],
   [2], [$0.520$], [$0.0329$], [$0.130$], [$0.587$], [$1.70$], [$2.91$],
   [3], [$0.600$], [$0.0329$], [$0.130$], [$0.688$], [$1.45$], [$2.11$],
-  [4], [$0.710$], [$0.0329$], [$0.130$], [$0.758$], [$1.32$], [$1.74$]
+  [4], [$0.710$], [$0.0329$], [$0.130$], [$0.758$], [$1.32$], [$1.74$],
 )
 
 #figure(table1, caption: [Data Recorded in #link(<part1>)[Part A]])
@@ -208,7 +208,7 @@ Four trials were conducted, with the hanging mass at 130g and decreasing by 20g 
   [5], [$0.500$], [$0.0329$], [$0.130$], [$0.736$], [$1.36$], [$1.85$],
   [6], [$0.500$], [$0.0329$], [$0.110$], [$0.749$], [$1.34$], [$1.78$],
   [7], [$0.500$], [$0.0329$], [$0.090$], [$0.780$], [$1.28$], [$1.64$],
-  [8], [$0.500$], [$0.0329$], [$0.070$], [$0.809$], [$1.24$], [$1.53$]
+  [8], [$0.500$], [$0.0329$], [$0.070$], [$0.809$], [$1.24$], [$1.53$],
 )
 
 
@@ -234,7 +234,7 @@ As illustrated in @fig2, the only forces acting on the hanging mass are the forc
 
 #figure(
   [#image("figures/fbd1.svg", height: 20%)],
-  caption: [Free body diagram of the hanging mass]
+  caption: [Free body diagram of the hanging mass],
 ) <fig2>
 
 #align(center, [
@@ -257,7 +257,7 @@ As illustrated below in @fig3, the only force acting on the stopper is the force
 
 #figure(
   [#image("figures/fbd2.svg", width: 20%)],
-  caption: [Free body diagram of the rotating stopper]
+  caption: [Free body diagram of the rotating stopper],
 ) <fig3>
 
 #align(center, [
@@ -285,7 +285,7 @@ It is intuitive that when $f=0#[Hz]$, $F_c=0N$ (no force at all). Thus, a graph 
 
 #figure(
   [#image("figures/plot1.svg", width: 90%)],
-  caption: [Centripetal Force vs. Frequency Squared at Various Radii]
+  caption: [Centripetal Force vs. Frequency Squared at Various Radii],
 ) <plot1>
 
 A vertical is then drawn at at 1.00hz#super([2]). By reading vertically across each line plotted, the centripetal force for a constant $f^2$ at each corresponding radius was determined:
@@ -344,7 +344,7 @@ The data from @tab0 has been plotted below in @plot2. An $r$-value#footnote[Pear
 
 #figure(
   [#image("figures/plot2.svg", width: 90%)],
-  caption: [Logarithm of Centripetal Force vs. Logarithm Radius ($r approx 0.985$)]
+  caption: [Logarithm of Centripetal Force vs. Logarithm Radius ($r approx 0.985$)],
 ) <plot2>
 
 $n_1$ is simply the slope in the line of best fit in @plot2 and $k_1$ can be calculated as the antilogarithm of the y-intercept, since the relationship between $log(F_c)$ and $log(r)$ is linear:
@@ -381,7 +381,7 @@ Using the conclusion reached from @forces, the following table can be produced b
 
 #figure(
   table4,
-  caption: [Data Recorded in #link(<part1>)[Part B] (Centripetal Force)]
+  caption: [Data Recorded in #link(<part1>)[Part B] (Centripetal Force)],
 ) <tab4>
 
 === Relationship Between Centripetal Force & Period <part2anal1>
@@ -391,7 +391,7 @@ Using the conclusion reached from @forces, the following table can be produced b
   $F_c &=&& frac(4 pi^2 m r, T^2)$ \
   $F_c &=&& (4 pi^2 m r) T^(-2)$ \
   $log(F_c) &=&& log((4 pi^2 m r) T^(-2))$ \
-  $log(F_c) &=&& log(4 pi^2 m r ) + log(T^(-2))$ \
+  $log(F_c) &=&& log(4 pi^2 m r) + log(T^(-2))$ \
   $log(F_c) &=&& -2log(T) + log(4 pi^2 m r)$ \
 ])
 
@@ -424,7 +424,7 @@ By simply taking the log of $F_c$ and $T$ from @tab4, the following table is obt
 
 #figure(
   table5,
-  caption: [Data Recorded in #link(<part1>)[Part B] ($F_c$ and $T$), Logarithms]
+  caption: [Data Recorded in #link(<part1>)[Part B] ($F_c$ and $T$), Logarithms],
 ) <tab5>
 
 #pagebreak()
@@ -433,7 +433,7 @@ The following scatter plot and line of best fit can be generated from the data i
 
 #figure(
   [#image("figures/plot3.svg", width: 80%)],
-  caption: [Logarithm of Centripetal Force vs. Logarithm of Period ($r=-0.995$)]
+  caption: [Logarithm of Centripetal Force vs. Logarithm of Period ($r=-0.995$)],
 ) <plot3>
 
 Visually, the data displays a strong negative correlation. The $r$-value of $-0.995$ indicates an almost exact linear correlation.
@@ -443,11 +443,11 @@ Using the y-intercept, we can calculate $k$ since $r=0.500#[m]$ and $n_1 approx 
 #align(center, math.equation[
   $log(k_2 r^(n_1)) &=&& -0.738113824$ \
   $k_2 (0.500#[m]^1.366714833) &=&& 10^(-0.738113824)$ \
-  $k_2 &=&& 0.182762115/0.38777243 $ \
+  $k_2 &=&& 0.182762115/0.38777243$ \
   $&approx&& 0.471 #[kg]$
 ])
 
-$n_2$ is simply the slope of the line of best fit in @plot3 (about $-6.27$). 
+$n_2$ is simply the slope of the line of best fit in @plot3 (about $-6.27$).
 
 The experimental results can now be represented in the log-linearized form of the exponential equation $F_c = k_2 r^(n_1) T^(n_2)$:
 
@@ -463,7 +463,7 @@ Many techniques used in this section will be similar to techniques used in @part
 #align(center, math.equation[
   $F_c &=&& 4 pi^2 m r f^2$ \
   $log(F_c) &=&& log((4 pi^2 m r) f^2)$ \
-  $log(F_c) &=&& log(4 pi^2 m r ) + log(f^2)$ \
+  $log(F_c) &=&& log(4 pi^2 m r) + log(f^2)$ \
   $log(F_c) &=&& 2log(f) + log(4 pi^2 m r)$
 ])
 
@@ -496,7 +496,7 @@ First, by taking the log of $F_c$ and $f$ from @tab4, the following table is obt
 
 #figure(
   table6,
-  caption: [Data Recorded in #link(<part1>)[Part B] ($F_c$ and $f$), Logarithms]
+  caption: [Data Recorded in #link(<part1>)[Part B] ($F_c$ and $f$), Logarithms],
 ) <tab6>
 
 #pagebreak()
@@ -505,10 +505,10 @@ Using data from @tab6, the below plot was produced:
 
 #figure(
   [#image("figures/plot4.svg", width: 90%)],
-  caption: [Logarithm of Centripetal Force vs. Logarithm of Frequency ($r=0.995$)]
+  caption: [Logarithm of Centripetal Force vs. Logarithm of Frequency ($r=0.995$)],
 ) <plot4>
 
-An $r$-value of $0.995$ indicates a very strong positive correlation between frequency and centripetal force. 
+An $r$-value of $0.995$ indicates a very strong positive correlation between frequency and centripetal force.
 
 Note that the values for slope ($~6.27$) and $r$ are both the negatives of the values found in @plot3. This is expected, given that frequency is the reciprocal of period, and taking the reciprocal is equivalent to raising a value to the -1#super[st] power.
 
@@ -553,29 +553,32 @@ Relevant equations:
 
 The below table summarizes errors found in @anal for relevant parameters:
 
-#figure(table(
-  columns: 5,
-  stroke: frame(),
+#figure(
+  table(
+    columns: 5,
+    stroke: frame(),
 
-  table.header[Parameter][Description][Theoretical][Actual][Error],
+    table.header[Parameter][Description][Theoretical][Actual][Error],
 
-  [$n_1$], [Exponent on $r$ in #link(<eq10>)[Eqn. (7)]], [$1$], [$1.37$], [$36.7%$],
-  [$k_1$], [Coefficient of $r^(n_1)$ in #link(<eq10>)[Eqn. (8)]], [$1.30#[N]/#[m]$], [$1.16#[N]/#[m]$], [$10.5%$],
-  [$n_2$], [Exponent on $T$ in #link(<eq11>)[Eqn. (9)]], [$-2$], [$-6.27$], [$213%$],
-  [$k_2$], [Coefficient of $r^(n_1)T^(n_2)$ in #link(<eq11>)[Eqn. (9)]], [$1.30#[kg]$], [$0.471#[kg]$], [$63.7%$],
-  [$n_3$], [Exponent on $f$ #link(<eq12>)[Eqn. (10)]], [2], [6.27], [$213%$],
-), caption: [Summary of Errors])
+    [$n_1$], [Exponent on $r$ in #link(<eq10>)[Eqn. (7)]], [$1$], [$1.37$], [$36.7%$],
+    [$k_1$], [Coefficient of $r^(n_1)$ in #link(<eq10>)[Eqn. (8)]], [$1.30#[N]/#[m]$], [$1.16#[N]/#[m]$], [$10.5%$],
+    [$n_2$], [Exponent on $T$ in #link(<eq11>)[Eqn. (9)]], [$-2$], [$-6.27$], [$213%$],
+    [$k_2$], [Coefficient of $r^(n_1)T^(n_2)$ in #link(<eq11>)[Eqn. (9)]], [$1.30#[kg]$], [$0.471#[kg]$], [$63.7%$],
+    [$n_3$], [Exponent on $f$ #link(<eq12>)[Eqn. (10)]], [2], [6.27], [$213%$],
+  ),
+  caption: [Summary of Errors],
+)
 
 There are likely several factors which contributed to the high level of error seen in this report. The remainder of this section will attempt to address the most exorbitant sources and suggest solutions to mitigate this error.
 
 === Issues with Assumptions
 A number of assumptions were made in @assume to reduce the complexity of calculations. The two that most likely contributed most to the error observed were neglecting friction and neglecting the force of gravity on the stopper.
 
-As noted in @qualia, it was observed that the paperclip would occasionally not respond to changes in speed. This is undoubtedly due to the friction experienced by the string on the tube. 
+As noted in @qualia, it was observed that the paperclip would occasionally not respond to changes in speed. This is undoubtedly due to the friction experienced by the string on the tube.
 
 To mitigate this effect, it may be preferable to spin at slower speeds to minimize the centripetal force and thus the reaction force of the tube on the fishing line.
 
-Furthermore, it may not be acceptable to consider the force of gravity on the stopper as negligible. Given a mass of $0.0329#[kg]$, $F_(g#[ stopper]) = (0.0329#[kg])(9.81#[m]/#[s]^2) approx 0.323#[N]$. 
+Furthermore, it may not be acceptable to consider the force of gravity on the stopper as negligible. Given a mass of $0.0329#[kg]$, $F_(g#[ stopper]) = (0.0329#[kg])(9.81#[m]/#[s]^2) approx 0.323#[N]$.
 
 This is in fact extremely significant, especially when compared to the assumed centrifugal forces calculated in @anal, being as much as $47.0%$ of the centripetal force in the case of trial 8.#footnote[Calculations: $frac(0.322749#[N], 0.6867#[N]) times 100% = 0.47 times 100% = 47.0%$.]
 
@@ -583,14 +586,14 @@ When drawing the free body diagram for the stopper considering gravity, it becom
 
 #figure(
   [#image("figures/fbd3.svg", width: 30%)],
-  caption: [Free body diagram of the stopper, considering gravity]
+  caption: [Free body diagram of the stopper, considering gravity],
 )
 
 This free body diagram matches observations in @qualia, where it was noted the stopper would rarely be at the same level as the tube.
 
-Clearly, some tension (resulting from the weight of the hanging mass) must counteract the weight of the stopper to prevent it from falling. 
+Clearly, some tension (resulting from the weight of the hanging mass) must counteract the weight of the stopper to prevent it from falling.
 
-Specifically, 
+Specifically,
 
 #align(center, math.equation[
   $F_c &=&& F_#[net x]$ \
@@ -603,7 +606,7 @@ The error between these two interpretations of $F_c$ grows with larger values of
 
 Thus, our previous analysis has likely vastly overestimated the centrifugal force acting on the stopper. To account for this inaccuracy, @eq3 and @eq4 should be replaced with more accurate equations.
 
-Alternatively, it may be possible use a lighter stopper or a heavier hanging mass in order to make the weight of the stopper much more smaller relative to the weight of the hanging mass. 
+Alternatively, it may be possible use a lighter stopper or a heavier hanging mass in order to make the weight of the stopper much more smaller relative to the weight of the hanging mass.
 
 This arises from the small angle approximation for cosine:
 
@@ -625,7 +628,7 @@ Given the strong positive correlations ($r > 0.95$) seen in @plot2 and @plot4, i
 
 Where $n in ZZ_+$
 
-These conclusions partially verify the hypotheses made in @hyp. 
+These conclusions partially verify the hypotheses made in @hyp.
 
 However, more work needs to be done to verify the value of $n$, which should theoretically be $2$, and eliminate the y-intercept errors.
 
