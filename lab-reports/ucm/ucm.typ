@@ -1,7 +1,7 @@
 #import "@preview/ilm:1.4.1": *
-#import "defs.typ"
-#import "formulae.typ"
-#import "work.typ"
+#import "sections/defs.typ"
+#import "sections/formulae.typ"
+#import "sections/work.typ"
 
 #set text(lang: "en")
 #set math.equation(numbering: none)
@@ -47,7 +47,8 @@
   date: datetime(year: 2025, month: 03, day: 18),
   abstract: [
     Lab Partners: Eddie Qu, Wen Zheng Dong \
-    Mr. Kanowitz, SPH4U1-23
+    Mr. Gavin Kanowitz \
+    SPH4U1-23
   ],
   appendix: (
     enabled: true,
@@ -58,24 +59,24 @@
   table-index: (enabled: true),
   bibliography: bibliography("refs.bib"),
   paper-size: "us-letter",
-  preface:
-  [
-    #align(center + horizon)[
-      #strong[Uniform Circular Motion: Investigating Centripetal Force, Radius, \ Period and Frequency]
-      \ \ \
-      Sean Yang
+  // preface:
+  // [
+  //   #align(center + horizon)[
+  //     #strong[Uniform Circular Motion: Investigating Centripetal Force, Radius, \ Period and Frequency]
+  //     \ \ \
+  //     Sean Yang
       
-      Lab Partners: Eddie Qu, Wen Zheng Dong
+  //     Lab Partners: Eddie Qu, Wen Zheng Dong
       
-      A. Y. Jackson Secondary School
+  //     A. Y. Jackson Secondary School
 
-      SPH4U1-23
+  //     SPH4U1-23
 
-      Mr. Gavin Kanowitz
+  //     Mr. Gavin Kanowitz
 
-      March 19, 2025
-    ]
-  ],
+  //     March 19, 2025
+  //   ]
+  // ],
 )
 
 = Introduction
@@ -144,7 +145,7 @@ Control variables:
 
 == Setup
 #figure(
-  [#image("setup.svg", width: 60%)], 
+  [#image("figures/setup.svg", width: 60%)], 
   caption: [Experimental Setup @bruni_2012_nelson]
 ) <fig1>
 
@@ -232,7 +233,7 @@ For all equations, assume that:
 As illustrated in @fig2, the only forces acting on the hanging mass are the force of tension on the string and the force of gravity, and these forces oppose each other.
 
 #figure(
-  [#image("fbd1.svg", height: 20%)],
+  [#image("figures/fbd1.svg", height: 20%)],
   caption: [Free body diagram of the hanging mass]
 ) <fig2>
 
@@ -255,7 +256,7 @@ Thus,
 As illustrated below in @fig3, the only force acting on the stopper is the force of tension (recall that it was assumed that the force of gravity is negligible in @assume). Thus, this is also the net force.
 
 #figure(
-  [#image("fbd2.svg", width: 20%)],
+  [#image("figures/fbd2.svg", width: 20%)],
   caption: [Free body diagram of the rotating stopper]
 ) <fig3>
 
@@ -283,7 +284,7 @@ In all trials conducted in #link(<part1>)[Part A], the hanging mass was 130g. Th
 It is intuitive that when $f=0#[Hz]$, $F_c=0N$ (no force at all). Thus, a graph can be plotted for all datapoints in @tab1, drawing a line from the origin, as illustrated in @plot1.
 
 #figure(
-  [#image("plot1.svg", width: 90%)],
+  [#image("figures/plot1.svg", width: 90%)],
   caption: [Centripetal Force vs. Frequency Squared at Various Radii]
 ) <plot1>
 
@@ -342,7 +343,7 @@ First, by taking the logarithm of values @tab3, the following table was produced
 The data from @tab0 has been plotted below in @plot2. An $r$-value#footnote[Pearson's correlation coefficient. For the formula, please see #link(<formulae>)[Appendix B].] of $0.985$ indicates a very strong positive correlation between these two variables.
 
 #figure(
-  [#image("plot2.svg", width: 90%)],
+  [#image("figures/plot2.svg", width: 90%)],
   caption: [Logarithm of Centripetal Force vs. Logarithm Radius ($r approx 0.985$)]
 ) <plot2>
 
@@ -431,7 +432,7 @@ By simply taking the log of $F_c$ and $T$ from @tab4, the following table is obt
 The following scatter plot and line of best fit can be generated from the data in @tab5:
 
 #figure(
-  [#image("plot3.svg", width: 80%)],
+  [#image("figures/plot3.svg", width: 80%)],
   caption: [Logarithm of Centripetal Force vs. Logarithm of Period ($r=-0.995$)]
 ) <plot3>
 
@@ -503,7 +504,7 @@ First, by taking the log of $F_c$ and $f$ from @tab4, the following table is obt
 Using data from @tab6, the below plot was produced:
 
 #figure(
-  [#image("plot4.svg", width: 90%)],
+  [#image("figures/plot4.svg", width: 90%)],
   caption: [Logarithm of Centripetal Force vs. Logarithm of Frequency ($r=0.995$)]
 ) <plot4>
 
@@ -581,7 +582,7 @@ This is in fact extremely significant, especially when compared to the assumed c
 When drawing the free body diagram for the stopper considering gravity, it becomes clear why this is significant:
 
 #figure(
-  [#image("fbd3.svg", width: 30%)],
+  [#image("figures/fbd3.svg", width: 30%)],
   caption: [Free body diagram of the stopper, considering gravity]
 )
 

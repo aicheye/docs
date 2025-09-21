@@ -17,6 +17,7 @@ def make_link(path, name):
 
 def scan_dir(base, rel=""):
     items = []
+    notDirs = []
     for entry in sorted(os.listdir(os.path.join(base, rel))):
         if entry in EXCLUDE:
             continue
@@ -26,7 +27,8 @@ def scan_dir(base, rel=""):
             sub_items = scan_dir(base, rel_path)
             items.append((entry, rel_path, sub_items))
         else:
-            items.append((entry, rel_path, None))
+            notDirs.append((entry, rel_path, None))
+    items.extend(notDirs)
     return items
 
 def render_tree(items, prefix="", is_last=True):
