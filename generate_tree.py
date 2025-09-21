@@ -34,10 +34,12 @@ def scan_dir(base, rel=""):
 def render_tree(items, prefix="", is_base=False):
     lines = []
     for (name, path, children) in items:
-        lines.append(f"{prefix}- {make_link(path, name)}  ")
         if children:
+            lines.append(f"{prefix}- {name}/  ")
             extension = "  " 
             lines.extend(render_tree(children, prefix + extension))
+        else:
+            lines.append(f"{prefix}- {make_link(path, name)}  ")
     return lines
 
 def main():
