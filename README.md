@@ -1,17 +1,11 @@
 Personal repository for documents (lab reports, homework, etc.) written in the [typst](https://github.com/typst/typst) typesetting system, including some [matplotlib](https://github.com/matplotlib/matplotlib) python files and other assets.
 
-## Directories
-<details>
-  <summary>resume</summary>
-
+## Directory Tree
+- [resume](resume)    
   - [resume.pdf](resume/resume.pdf)    
   - [resume.typ](resume/resume.typ)    
   - [resume.yml](resume/resume.yml)    
-</details>
-
-<details>
-  <summary>ucm-lab</summary>
-
+- [ucm-lab](ucm-lab)    
   - [figures](ucm-lab/figures)    
     - [fbd1.svg](ucm-lab/figures/fbd1.svg)    
     - [fbd2.svg](ucm-lab/figures/fbd2.svg)    
@@ -32,5 +26,3 @@ Personal repository for documents (lab reports, homework, etc.) written in the [
     - [work.typ](ucm-lab/sections/work.typ)    
   - [ucm.pdf](ucm-lab/ucm.pdf)    
   - [ucm.typ](ucm-lab/ucm.typ)    
-</details>
-
