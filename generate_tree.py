@@ -31,21 +31,28 @@ def scan_dir(base, rel=""):
     items.extend(notDirs)
     return items
 
-def render_tree(items, prefix="", is_last=True):
+def render_tree(items, prefix="", is_base=False):
     lines = []
-    for idx, (name, path, children) in enumerate(items):
-        line = f"{prefix}- {make_link(path, name)}  "
-        lines.append(line)
+    for (name, path, children) in items:
+        if (is_base and children):
+            lines.append("<details>")
+            lines.append(f"  <summary>{name}</summary>")
+            lines.append("")
+        elif not is_base:
+            lines.append(f"{prefix}- {make_link(path, name)}  ")
         if children:
-            extension = "    "  # 4 spaces for each indent level
-            lines.extend(render_tree(children, prefix + extension, is_last=True))
+            extension = "  " 
+            lines.extend(render_tree(children, prefix + extension))
+        if (is_base and children):
+            lines.append("</details>")
+            lines.append("")
     return lines
 
 def main():
     readme_path = os.path.join(ROOT, "README.md")
     header_lines = get_readme_header(readme_path)
     tree = scan_dir(ROOT)
-    tree_lines = ["", "## Directory Tree", *render_tree(tree)]
+    tree_lines = ["", "## Directories", *render_tree(tree, prefix="", is_base=True)]
     with open(readme_path, "w") as f:
         f.write("\n".join(header_lines + tree_lines) + "\n")
 
