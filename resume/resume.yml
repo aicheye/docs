@@ -3,7 +3,7 @@
 personal:
   name: Sean Yang
   email: sean@seanyang.me
-  phone: +1 (416) 578 - 8646
+  phone: null
   url: https://seanyang.me
   titles:
     - Student
@@ -44,7 +44,7 @@ education:
     honors: null
     courses: null
     highlights:
-      - "*Activities*: Onboarding for Waterloo Reality Labs (Unity/PyTorch), Watonomous (ROS2), active on Quizbowl Team"
+      - "*Activities*: Watonomous Robotics Software Engineer (ROS2/C++), active on Quizbowl Team"
 
 affiliations:
   - organization: AYJ Coding Club
