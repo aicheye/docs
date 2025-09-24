@@ -4,6 +4,7 @@ Personal repository for documents (lab reports, homework, etc.) written in the [
 - resume2/  
   - [resume.pdf](resume2/resume.pdf)    
   - [resume.yml](resume2/resume.yml)    
+  - [resume2.pdf](resume2/resume2.pdf)    
   - [resume2.typ](resume2/resume2.typ)    
 - ucm/  
   - figures/  
