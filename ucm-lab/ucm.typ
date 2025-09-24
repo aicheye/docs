@@ -57,7 +57,7 @@
   listing-index: (enabled: true),
   figure-index: (enabled: true),
   table-index: (enabled: true),
-  bibliography: bibliography("refs.bib"),
+  bibliography: bibliography("sections/refs.bib"),
   paper-size: "us-letter",
   // preface:
   // [
