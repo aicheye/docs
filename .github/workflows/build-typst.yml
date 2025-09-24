@@ -1,0 +1,30 @@
+name: Build Typst Documents
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '**/*.typ'
+jobs:
+  build-typst:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Install Typst
+        run: |
+          curl -L https://github.com/typst/typst/releases/latest/download/typst-x86_64-linux.tar.xz -o typst.tar.xz
+          tar -xf typst.tar.xz
+          sudo mv typst /usr/local/bin/typst
+      - name: Find and build all .typ files
+        run: |
+          find . -type f -name '*.typ' | while read typfile; do
+            pdffile="${typfile%.typ}.pdf"
+            typst compile "$typfile" "$pdffile"
+          done
+      - name: Commit and push PDFs
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add '*.pdf'
+          git diff --cached --quiet || git commit -m 'Auto-build: update PDFs from Typst sources'
+          git push
