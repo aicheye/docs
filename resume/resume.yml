@@ -21,17 +21,17 @@ personal:
       url: https://github.com/aicheye
 
 work:
-  - organization: The STEAM Project
-    url: null
-    location: Richmond Hill, Ontario
-    positions:
-      - position: Jr. Camp Counsellor
-        startDate: 2024-06-01
-        endDate: 2024-08-31
-        highlights:
-          - Supervised groups of 10-20 children while coordinating daily schedules and safety
-          - Assisted with engineering-focused workshops such as building wooden toys using laser-cut components
-          - Collaborated with counsellors to adapt activities in real time and keep participants engaged
+#   - organization: The STEAM Project
+#     url: null
+#     location: Richmond Hill, Ontario
+#     positions:
+#       - position: Jr. Camp Counsellor
+#         startDate: 2024-06-01
+#         endDate: 2024-08-31
+#         highlights:
+#           - Supervised groups of 10-20 children while coordinating daily schedules and safety
+#           - Assisted with engineering-focused workshops such as building wooden toys using laser-cut components
+#           - Collaborated with counsellors to adapt activities in real time and keep participants engaged
 
 education:
   - institution: University of Waterloo
@@ -44,9 +44,19 @@ education:
     honors: null
     courses: null
     highlights:
-      - "*Activities*: Watonomous Robotics Software Engineer (ROS2/C++), Quizbowl Team"
+      - "*Activities*: Watonomous Robotics Engineer, Quizbowl Team"
 
 affiliations:
+  - organization: WATonomous
+    url: https://watonomous.ca/
+    location: Waterloo, Ontario
+    position: Robotics Software Engineer
+    startDate: 2025-09-01
+    endDate: "present"
+    highlights:
+      - Develop and maintain software for an autonomous vehicle using ROS 2 and C++
+      - Implement perception algorithms for object detection and localization using LiDAR and camera data
+      - Collaborate with a multidisciplinary team to integrate software with hardware components
   - organization: AYJ Coding Club
     url: null
     location: North York, Ontario
