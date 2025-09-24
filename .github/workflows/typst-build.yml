@@ -3,8 +3,8 @@ run-name: Build Typst Documents
 on:
   workflow_dispatch:
   push:
-    paths:
-      - '**/*.typ'
+    paths-ignore:
+      - '**/*.pdf'
 jobs:
   build-typst:
     runs-on: ubuntu-latest
