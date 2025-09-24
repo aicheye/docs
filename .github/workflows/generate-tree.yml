@@ -1,4 +1,4 @@
-name: generate-directory-tree
+name: Generate Directory Tree in README
 on:
   workflow_dispatch:
   push:

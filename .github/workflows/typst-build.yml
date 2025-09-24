@@ -1,4 +1,4 @@
-name: typst-build-pdf
+name: Build Typst PDFs
 on:
   workflow_dispatch:
   push:
