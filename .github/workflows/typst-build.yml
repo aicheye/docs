@@ -1,5 +1,5 @@
 name: typst-build
-run-name: Build Typst Documents
+run-name: build typst documents
 on:
   workflow_dispatch:
   push:

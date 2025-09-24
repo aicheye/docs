@@ -1,5 +1,5 @@
 name: generate-tree
-run-name: Generate Directory Tree in README
+run-name: generate directory tree in README
 on:
   workflow_dispatch:
   push:
