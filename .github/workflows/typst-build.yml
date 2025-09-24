@@ -19,8 +19,12 @@ jobs:
       - name: Find and build all .typ files
         run: |
           find . -type f -name '*.typ' | while read typfile; do
-            pdffile="${typfile%.typ}.pdf"
-            typst compile "$typfile" "$pdffile"
+            dirname=$(basename "$(dirname "$typfile")")
+            filename=$(basename "$typfile" .typ)
+            if [ "$dirname" = "$filename" ]; then
+              pdffile="${typfile%.typ}.pdf"
+              typst compile "$typfile" "$pdffile"
+            fi
           done
       - name: Commit and push PDFs
         env:
