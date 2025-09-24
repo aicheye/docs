@@ -52,7 +52,7 @@ affiliations:
     location: North York, Ontario
     position: Senior Lecturer & Problem Setter
     startDate: 2024-06-01
-    endDate: "present"
+    endDate: 2025-06-30
     highlights:
       - Led bi-weekly lectures on advanced programming topics including recursion, dynamic programming, graph algorithms, and trees
       - Authored original competitive programming problems in C++ with 250+ total submissions from students
