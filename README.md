@@ -3,8 +3,8 @@ Personal repository for documents (lab reports, homework, etc.) written in the [
 ## Directory Tree
 - resume/  
   - [resume.pdf](resume/resume.pdf)    
-  - [resume.typ](resume/resume.typ)    
   - [resume.yml](resume/resume.yml)    
+  - [resume2.typ](resume/resume2.typ)    
 - ucm/  
   - figures/  
     - [fbd1.svg](ucm/figures/fbd1.svg)    
