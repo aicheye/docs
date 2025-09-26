@@ -54,9 +54,10 @@ affiliations:
     startDate: 2025-09-01
     endDate: "present"
     highlights:
-      - Developing and maintaining software for an autonomous vehicle using ROS 2 and C++
-      - Designing and testing predictive modelling systems for external agent behaviour to enhance vehicle safety
+      - Developing concurrent software for an autonomous vehicle using *ROS 2* and *C++ (rclcpp)*
+      - Designing and testing *predictive modelling systems* for external agent behaviour to enhance vehicle safety
       - Collaborating with a multidisciplinary team to integrate software with hardware components
+      - Utilized and maintained *Docker containerization* for streamlined development and deployment
   - organization: AYJ Coding Club
     url: null
     location: North York, Ontario
@@ -65,7 +66,7 @@ affiliations:
     endDate: 2025-06-30
     highlights:
       - Led bi-weekly lectures on advanced programming topics including recursion, dynamic programming, graph algorithms, and trees
-      - Authored original competitive programming problems in C++ with 250+ total submissions from students
+      - Authored original competitive programming problems in C++ with *250+ total submissions* from students
       - Implemented custom graders to support automated evaluation of problems on the club's C++ online judge
       - Mentored junior members in algorithm design and problem-solving strategies
 
@@ -94,8 +95,8 @@ projects:
     highlights:
       - Built and deployed a personal portfolio website from scratch using Tailwind CSS, React, and Next.js
       - Integrated a serverless REST API with Google Cloud Run for dynamic content, chosen for cost efficiency and simplicity
-      - Designed UI/UX independently, achieving a 100/100 accessibility score on Google Lighthouse
-      - Deployed with Netlify CI/CD, custom domain, and HTTPS; reached 1.04k unique visitors in the last 30 days
+      - Designed UI/UX independently, achieving a *100/100 accessibility score* on Google Lighthouse
+      - Deployed with Netlify CI/CD, custom domain, and HTTPS; reached *1.04k unique visitors* in the last 30 days
 
   - name: aicheye's Combat Tagging
     url: https://github.com/aicheye/combat-tag
@@ -105,7 +106,7 @@ projects:
     highlights:
       - Developed a Minecraft mod (700 LOC, 10 classes) in Java with Gradle to enhance default combat mechanics
       - Applied OOP design, event handling, and resource management to ensure stable performance on hardware-limited servers
-      - Iterated on features based on community feedback, reaching 390+ downloads worldwide on Modrinth
+      - Iterated on features based on community feedback, reaching *390+ downloads* worldwide on Modrinth
 
   - name: Quoridor
     url: https://github.com/aicheye/quoridor
@@ -114,7 +115,7 @@ projects:
     affiliation: A.Y. Jackson Secondary School
     highlights:
       - Implemented the full strategy game Quoridor in Java (1.7k LOC, 5 classes) as a solo project
-      - Designed a minimax-based game agent and improved runtime by 100x using alpha-beta pruning and transposition caching
+      - Designed a minimax-based game agent and improved runtime by *100x* using alpha-beta pruning and transposition caching
       - Developed pathfinding algorithms and heuristic ordering to strengthen AI move selection
       - Documented all classes with Javadocs to ensure maintainability and clarity
 
