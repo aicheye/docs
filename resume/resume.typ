@@ -8,7 +8,7 @@
   fontsize: 10pt, // 10pt, 11pt, 12pt
   linespacing: 6pt,
   sectionspacing: 0pt,
-  showAddress: false, // true/false show address in contact info
+  showAddress: true, // true/false show address in contact info
   showNumber: false, // true/false show phone number in contact info
   showTitle: false, // true/false show title in heading
   headingsmallcaps: false, // true/false use small caps for headings
@@ -114,8 +114,8 @@
 
 #cvheading(cvdata, uservars)
 #cveducation(cvdata)
-#cvprojects(cvdata)
 #cvaffiliations(cvdata)
+#cvprojects(cvdata)
 #cvwork(cvdata)
 #cvawards(cvdata)
 #cvskills(cvdata)
