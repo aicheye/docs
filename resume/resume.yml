@@ -54,9 +54,9 @@ affiliations:
     startDate: 2025-09-01
     endDate: "present"
     highlights:
-      - Develop and maintain software for an autonomous vehicle using ROS 2 and C++
-      - Implement perception algorithms for object detection and localization using LiDAR and camera data
-      - Collaborate with a multidisciplinary team to integrate software with hardware components
+      - Developing and maintaining software for an autonomous vehicle using ROS 2 and C++
+      - Designing and testing predictive modelling systems for external agent behaviour to enhance vehicle safety
+      - Collaborating with a multidisciplinary team to integrate software with hardware components
   - organization: AYJ Coding Club
     url: null
     location: North York, Ontario
@@ -67,6 +67,7 @@ affiliations:
       - Led bi-weekly lectures on advanced programming topics including recursion, dynamic programming, graph algorithms, and trees
       - Authored original competitive programming problems in C++ with 250+ total submissions from students
       - Implemented custom graders to support automated evaluation of problems on the club's C++ online judge
+      - Mentored junior members in algorithm design and problem-solving strategies
 
 awards:
   - title: Certificates of Distinction in the Euclid, CSMC, & CCC (Sr. Div.) Contests
