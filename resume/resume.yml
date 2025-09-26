@@ -140,7 +140,7 @@ skills:
   - category: Tools
     skills:
       - Unix/Unix-like Systems (Linux)
-      - Git
+      - Git version control
       - CI/CD
       - Docker
       - Overleaf
