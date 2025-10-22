@@ -2,8 +2,8 @@ Personal repository for documents (lab reports, homework, etc.) written in the [
 
 ## Directory Tree
 - cs137_midterm_reference/  
-  - [reference.pdf](cs137_midterm_reference/reference.pdf)    
-  - [reference.typ](cs137_midterm_reference/reference.typ)    
+  - [cs137_midterm_reference.pdf](cs137_midterm_reference/cs137_midterm_reference.pdf)    
+  - [cs137_midterm_reference.typ](cs137_midterm_reference/cs137_midterm_reference.typ)    
 - resume/  
   - [resume.pdf](resume/resume.pdf)    
   - [resume.typ](resume/resume.typ)    
