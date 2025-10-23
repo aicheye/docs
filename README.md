@@ -1,6 +1,10 @@
 Personal repository for documents (lab reports, homework, etc.) written in the [typst](https://github.com/typst/typst) typesetting system, including some [matplotlib](https://github.com/matplotlib/matplotlib) python files and other assets.
 
 ## Directory Tree
+- che102_midterm_reference/  
+  - [che102_midterm_reference.pdf](che102_midterm_reference/che102_midterm_reference.pdf)    
+  - [che102_midterm_reference.typ](che102_midterm_reference/che102_midterm_reference.typ)    
+  - [manometer.png](che102_midterm_reference/manometer.png)    
 - cs137_midterm_reference/  
   - [cs137_midterm_reference.pdf](cs137_midterm_reference/cs137_midterm_reference.pdf)    
   - [cs137_midterm_reference.typ](cs137_midterm_reference/cs137_midterm_reference.typ)    
