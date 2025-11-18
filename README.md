@@ -1,6 +1,11 @@
 Personal repository for documents (lab reports, homework, etc.) written in the [typst](https://github.com/typst/typst) typesetting system, including some [matplotlib](https://github.com/matplotlib/matplotlib) python files and other assets.
 
 ## Directory Tree
+- Sean_Yang_resume/  
+  - [Sean_Yang_resume.pdf](Sean_Yang_resume/Sean_Yang_resume.pdf)  
+  - [Sean_Yang_resume.typ](Sean_Yang_resume/Sean_Yang_resume.typ)  
+  - [resume.pdf](Sean_Yang_resume/resume.pdf)  
+  - [resume.yml](Sean_Yang_resume/resume.yml)  
 - che102_midterm_reference/  
   - [che102_midterm_reference.pdf](che102_midterm_reference/che102_midterm_reference.pdf)  
   - [che102_midterm_reference.typ](che102_midterm_reference/che102_midterm_reference.typ)  
@@ -8,10 +13,6 @@ Personal repository for documents (lab reports, homework, etc.) written in the [
 - cs137_midterm_reference/  
   - [cs137_midterm_reference.pdf](cs137_midterm_reference/cs137_midterm_reference.pdf)  
   - [cs137_midterm_reference.typ](cs137_midterm_reference/cs137_midterm_reference.typ)  
-- resume/  
-  - [resume.pdf](resume/resume.pdf)  
-  - [resume.typ](resume/resume.typ)  
-  - [resume.yml](resume/resume.yml)  
 - ucm/  
   - figures/  
     - [fbd1.svg](ucm/figures/fbd1.svg)  
