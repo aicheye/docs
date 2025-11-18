@@ -26,22 +26,21 @@ def scan_dir(base, rel=""):
         rel_path = os.path.join(rel, entry)
         if os.path.isdir(full_path):
             sub_items = scan_dir(base, rel_path)
-            items.append((entry, rel_path, None, sub_items))
+            items.append((entry, rel_path, sub_items))
         else:
-            modified = datetime.fromtimestamp(os.path.getmtime(full_path)).strftime("%Y-%m-%d %H:%M:%S")
-            notDirs.append((entry, rel_path, modified, None))
+            notDirs.append((entry, rel_path, []))
     items.extend(notDirs)
     return items
 
 def render_tree(items, prefix=""):
     lines = []
-    for (name, path, modified, children) in items:
+    for (name, path, children) in items:
         if children:
             lines.append(f"{prefix}- {name}/  ")
             extension = "  " 
             lines.extend(render_tree(children, prefix + extension))
         else:
-            lines.append(f"{prefix}- {make_link(path, name)} (modified: {modified})  ")
+            lines.append(f"{prefix}- {make_link(path, name)}")
     return lines
 
 def main():
