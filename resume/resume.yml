@@ -94,7 +94,7 @@ projects:
     endDate: "present"
     highlights:
       - Built and deployed a personal portfolio website from scratch using Tailwind CSS, React, and Next.js
-      - Integrated a serverless REST API with Google Cloud Run for dynamic content, chosen for cost efficiency and simplicity
+      - Integrated a self-hosted Flask backend to serve dynamic content and manage rate limiting
       - Designed UI/UX independently, achieving a *100/100 accessibility score* on Google Lighthouse
       - Deployed with Netlify CI/CD, custom domain, and HTTPS; reached *1.04k unique visitors* in the last 30 days
 
