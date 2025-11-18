@@ -59,15 +59,15 @@ affiliations:
       - Collaborating with a multidisciplinary team to integrate software with hardware components
       - Utilized and maintained *Docker containerization* for streamlined development and deployment
   - organization: AYJ Coding Club
-    url: null
+    url: https://ayjcoding.club/
     location: North York, Ontario
     position: Senior Lecturer & Problem Setter
     startDate: 2024-06-01
     endDate: 2025-06-30
     highlights:
       - Led bi-weekly lectures on advanced programming topics including recursion, dynamic programming, graph algorithms, and trees
-      - Authored original competitive programming problems in C++ with *250+ total submissions* from students
-      - Implemented custom graders to support automated evaluation of problems on the club's C++ online judge
+      - Authored original language-agnostic programming problems with *250+ total submissions* from students on https://ayjcoding.club/
+      - Implemented custom graders in C++ to support automated evaluation of problems on the club's online judge 
       - Mentored junior members in algorithm design and problem-solving strategies
 
 awards:
@@ -137,8 +137,8 @@ skills:
       - Next.js
       - ROS 2
       - LaTeX
-      - MySQL
       - Flask
+      - Bash/Shell Scripting
   - category: Tools
     skills:
       - Unix/Unix-like Systems (Linux)
@@ -149,6 +149,7 @@ skills:
       - Figma
       - Foxglove Studio
       - GitHub Actions
+      - MySQL
 
 languages:
   # - language: English
