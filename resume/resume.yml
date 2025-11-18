@@ -106,7 +106,7 @@ projects:
     highlights:
       - Developed a Minecraft mod (700 LOC, 10 classes) in Java with Gradle to enhance default combat mechanics
       - Applied OOP design, event handling, and resource management to ensure stable performance on hardware-limited servers
-      - Iterated on features based on community feedback, reaching *390+ downloads* worldwide on Modrinth
+      - Iterated on features based on community feedback, reaching *510+ downloads* worldwide on Modrinth
 
   - name: Quoridor
     url: https://github.com/aicheye/quoridor
