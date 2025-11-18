@@ -1,4 +1,5 @@
 import os
+from datetime import datetime
 
 EXCLUDE = {".git", ".github", "README.md", "CNAME", "favicon.ico", "generate_tree.py", "_layouts"}
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -25,28 +26,29 @@ def scan_dir(base, rel=""):
         rel_path = os.path.join(rel, entry)
         if os.path.isdir(full_path):
             sub_items = scan_dir(base, rel_path)
-            items.append((entry, rel_path, sub_items))
+            items.append((entry, rel_path, None, sub_items))
         else:
-            notDirs.append((entry, rel_path, None))
+            modified = datetime.fromtimestamp(os.path.getmtime(full_path)).strftime("%Y-%m-%d %H:%M:%S")
+            notDirs.append((entry, rel_path, modified, None))
     items.extend(notDirs)
     return items
 
-def render_tree(items, prefix="", is_base=False):
+def render_tree(items, prefix=""):
     lines = []
-    for (name, path, children) in items:
+    for (name, path, modified, children) in items:
         if children:
             lines.append(f"{prefix}- {name}/  ")
             extension = "  " 
             lines.extend(render_tree(children, prefix + extension))
         else:
-            lines.append(f"{prefix}- {make_link(path, name)}  ")
+            lines.append(f"{prefix}- {make_link(path, name)} (modified: {modified})  ")
     return lines
 
 def main():
     readme_path = os.path.join(ROOT, "README.md")
     header_lines = get_readme_header(readme_path)
     tree = scan_dir(ROOT)
-    tree_lines = ["", "## Directory Tree", *render_tree(tree, prefix="", is_base=True)]
+    tree_lines = ["", "## Directory Tree", *render_tree(tree)]
     with open(readme_path, "w") as f:
         f.write("\n".join(header_lines + tree_lines) + "\n")
 
