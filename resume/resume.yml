@@ -127,7 +127,7 @@ skills:
       - Conflict Resolution
   - category: Programming
     skills:
-      - Java
+      - Java/Kotlin
       - C/C++
       - Python
       - JavaScript
@@ -136,16 +136,18 @@ skills:
       - Next.js
       - ROS 2
       - LaTeX
-      - SQL (Supabase)
+      - MySQL
+      - Flask
   - category: Tools
     skills:
       - Unix/Unix-like Systems (Linux)
-      - Git version control
+      - Git
       - CI/CD
       - Docker
       - Overleaf
       - Figma
       - Foxglove Studio
+      - GitHub Actions
 
 languages:
   # - language: English
