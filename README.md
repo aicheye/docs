@@ -5,6 +5,11 @@ Personal repository for documents (lab reports, homework, etc.) written in the [
   - [Sean_Yang_resume.pdf](Sean_Yang_resume/Sean_Yang_resume.pdf)  
   - [Sean_Yang_resume.typ](Sean_Yang_resume/Sean_Yang_resume.typ)  
   - [resume.yml](Sean_Yang_resume/resume.yml)  
+- che102_final_reference/  
+  - [che102_final_reference.pdf](che102_final_reference/che102_final_reference.pdf)  
+  - [che102_final_reference.typ](che102_final_reference/che102_final_reference.typ)  
+  - [galvanic_cell.png](che102_final_reference/galvanic_cell.png)  
+  - [manometer.png](che102_final_reference/manometer.png)  
 - che102_midterm_reference/  
   - [che102_midterm_reference.pdf](che102_midterm_reference/che102_midterm_reference.pdf)  
   - [che102_midterm_reference.typ](che102_midterm_reference/che102_midterm_reference.typ)  
