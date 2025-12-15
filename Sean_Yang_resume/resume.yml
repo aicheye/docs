@@ -87,6 +87,26 @@ awards:
       - Recognized among top students in Computer Science and Chemistry over four years of study
 
 projects:
+  - name: Wundernn Market State Prediction
+    url: https://github.com/aicheye/wundernn
+    startDate: 2025-10-01
+    endDate: 2025-12-15
+    affiliation: Wunderlab ML Challenge
+    highlights:
+      - Developed a Transformer-based sequence model for market state forecasting, achieving *0.396 mean R² score* across 32 features
+      - Implemented advanced positional encoding and multi-head self-attention with residual connections for robust temporal modeling
+      - Optimized for 1000-step sequences with proper warm-up period handling and trained on GPU with early stopping
+
+  - name: aicheye's Combat Tagging
+    url: https://github.com/aicheye/combat-tag
+    startDate: 2025-03-01
+    affiliation: Personal Project
+    endDate: "present"
+    highlights:
+      - Developed a Minecraft mod (700 LOC, 10 classes) in Java with Gradle to enhance default combat mechanics
+      - Applied OOP design, event handling, and resource management to ensure stable performance on hardware-limited servers
+      - Iterated on features based on community feedback, reaching *610+ downloads* worldwide on Modrinth
+  
   - name: seanyang.me
     url: https://seanyang.me
     startDate: 2025-02-01
@@ -97,27 +117,6 @@ projects:
       - Integrated a self-hosted Flask backend to serve dynamic content and manage rate limiting
       - Designed UI/UX independently, achieving a *100/100 accessibility score* on Google Lighthouse
       - Deployed with Netlify CI/CD, custom domain, and HTTPS; reached *1.04k unique visitors* in the last 30 days
-
-  - name: aicheye's Combat Tagging
-    url: https://github.com/aicheye/combat-tag
-    startDate: 2025-03-01
-    affiliation: Personal Project
-    endDate: "present"
-    highlights:
-      - Developed a Minecraft mod (700 LOC, 10 classes) in Java with Gradle to enhance default combat mechanics
-      - Applied OOP design, event handling, and resource management to ensure stable performance on hardware-limited servers
-      - Iterated on features based on community feedback, reaching *510+ downloads* worldwide on Modrinth
-
-  - name: Quoridor
-    url: https://github.com/aicheye/quoridor
-    startDate: 2024-05-01
-    endDate: 2024-06-30
-    affiliation: A.Y. Jackson Secondary School
-    highlights:
-      - Implemented the full strategy game Quoridor in Java (1.7k LOC, 5 classes) as a solo project
-      - Designed a minimax-based game agent and improved runtime by *100x* using alpha-beta pruning and transposition caching
-      - Developed pathfinding algorithms and heuristic ordering to strengthen AI move selection
-      - Documented all classes with Javadocs to ensure maintainability and clarity
 
 skills:
   - category: Soft Skills
@@ -139,17 +138,21 @@ skills:
       - LaTeX
       - Flask
       - Bash/Shell Scripting
+  - category: Machine Learning
+    skills:
+      - PyTorch
+      - Transformer Architectures
+      - Deep Learning
+      - NumPy
+      - Pandas
+      - scikit-learn
   - category: Tools
     skills:
       - Unix/Unix-like Systems (Linux)
       - Git
       - CI/CD
       - Docker
-      - Overleaf
-      - Figma
-      - Foxglove Studio
       - GitHub Actions
-      - MySQL
 
 languages:
   # - language: English

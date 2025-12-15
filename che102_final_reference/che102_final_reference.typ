@@ -18,9 +18,6 @@ $(1"K")/(1.8"°R")$, $(1"K")/(1.8"°F")$, $(1"°C")/(1.8"°F")$, $(1"°C")/(1.8"
 == Density
 $rho = frac(m, v)$
 
-== Average Atomic Mass
-$M = sum_i x_i M_i$
-
 == Mole Fraction and Percentage
 $x_A = n_a / n_T = n_A / (sum_i n_i)$
 
@@ -33,21 +30,6 @@ $% = w_A times 100\%$
 
 == Average Molar Mass
 $M = sum_i x_i M_i$
-
-== Concentration
-$"molarity" = n / V$
-
-$"mass %" = m_"solute" / m_"solution" times 100%$
-
-$"volume %" = V_"solute" / V_"solution" times 100%$
-
-$"weight-to-volume %" = m_"solute" / V_"solution" times 100%$
-
-$"molality" = n_"solute" / m_"solvent"$
-
-$"ppm" = m_"solute" / m_"solution" times 10^6$
-
-$"ppb" = m_"solute" / m_"solution" times 10^9$
 
 == Percentage Yield and Excess
 $"% yield" = "actual" / "theoretical" times 100%$
@@ -77,8 +59,6 @@ At 25°C and 1 atm: 1 mol gas = 24.465 L
 
 == Ideal Gas Law
 $P V = n R T$
-
-or $P V_m = R T$, where $V_m = V / n$
 
 Temperature in K
 
@@ -180,11 +160,10 @@ $E^o$ = standard cell potential (V)
 
 $Q$ = reaction quotient
 
-== Concentration Cells at 25°C
-$E = (0.0592/n) log (C_"low" / C_"high")$
-
 == Galvanic cell
 #image("galvanic_cell.png")
+
+$"Cu"_"(s)"$ | $"Cu"^(2+)_"(aq)"$ || $"Zn"^(2+)_"(aq)"$ | $"Zn"_("s")$
 
 Anode (oxidation): left side
 
