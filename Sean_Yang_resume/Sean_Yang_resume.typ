@@ -10,7 +10,7 @@
   sectionspacing: 0pt,
   showAddress: false, // true/false show address in contact info
   showNumber: false, // true/false show phone number in contact info
-  showTitle: false, // true/false show title in heading
+  showTitle: true, // true/false show title in heading
   headingsmallcaps: false, // true/false use small caps for headings
   sendnote: false, // set to false to have sideways endnote
 )
@@ -72,13 +72,61 @@
             *#edu.institution* #h(1fr) *#edu.location* \
           ]
           // Line 2: Degree and Date
-          #text(style: "italic")[#edu.studyType] #h(1fr)
+          #text(style: "italic")[#edu.studyType] - #text(weight: "semibold")[CGPA: #edu.cgpa] #h(1fr)
           #utils.daterange(start, end) (expected)\
           #eval(edu-items, mode: "markup")
         ]
       }
     ]
   }
+}
+
+#let cvawards(info, title: "Honors and Awards", isbreakable: true) = {
+    if info.awards != none {block[
+        == #title
+        #for award in info.awards {
+            // Parse ISO date strings into datetime objects
+            let date = utils.strpdate(award.date)
+            // Create a block layout for each award entry
+            block(width: 100%, breakable: isbreakable)[
+                // Line 1: Award Title and Location
+                #if award.url != none [
+                    *#link(award.url)[#award.title]* #h(1fr) *#award.location* \
+                ] else [
+                    *#award.title* #h(1fr) *#award.location* \
+                ]
+                // Line 2: Issuer and Date
+                Issued by #text(style: "italic")[#award.issuer]  #h(1fr) #date \
+                // Summary or Description
+                #if award.highlights != none {
+                    for hi in award.highlights [
+                        - #eval(hi, mode: "markup")
+                    ]
+                } else {}
+            ]
+        }
+    ]}
+}
+
+#let cvskills(info, title: "Skills", isbreakable: true) = {
+    if (info.languages != none) or (info.skills != none) or (info.interests != none) {block(breakable: isbreakable)[
+        == #title
+        #if (info.languages != none) [
+            #let langs = ()
+            #for lang in info.languages {
+                langs.push([#lang.language (#lang.fluency)])
+            }
+            - *Languages*: #langs.join(", ")
+        ]
+        #if (info.skills != none) [
+            #for group in info.skills [
+                - *#group.category*: #group.skills.join(", ")
+            ]
+        ]
+        #if (info.interests != none) [
+            - *Interests*: #info.interests.join(", ")
+        ]
+    ]}
 }
 
 #let endnote(uservars) = {
