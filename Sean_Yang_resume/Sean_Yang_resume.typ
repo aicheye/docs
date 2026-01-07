@@ -72,8 +72,8 @@
             *#edu.institution* #h(1fr) *#edu.location* \
           ]
           // Line 2: Degree and Date
-          #text(style: "italic")[#edu.studyType] - #text(weight: "semibold")[CGPA: #edu.cgpa] #h(1fr)
-          #utils.daterange(start, end) (expected)\
+          #text(style: "italic")[#edu.studyType] #sym.dash.em #text(weight: "semibold")[Cumulative GPA: #edu.cgpa] #h(1fr)
+          #utils.daterange(none, "Expected " + end)\
           #eval(edu-items, mode: "markup")
         ]
       }
@@ -162,8 +162,8 @@
 
 #cvheading(cvdata, uservars)
 #cveducation(cvdata)
-#cvaffiliations(cvdata)
 #cvprojects(cvdata)
+#cvaffiliations(cvdata)
 #cvwork(cvdata)
 #cvawards(cvdata)
 #cvskills(cvdata)

@@ -7,7 +7,7 @@ personal:
   url: https://seanyang.me
   titles:
     - Software Engineering Intern (May-August 2026)
-    - UWaterloo Software Engineering '30
+    - UWaterloo SE 2030
     - C++, Java, ML, Full-Stack
   location:
     city: Waterloo
@@ -41,7 +41,7 @@ education:
     studyType: Candidate for Bachelor of Software Engineering
     startDate: 2025-09-01
     endDate: 2030-05-30
-    location: Waterloo, Ontario
+    location: null
     honors: null
     courses: null
     highlights:
@@ -146,32 +146,18 @@ projects:
   #     - Integrated location services, rate limiting, and pull-to-refresh for responsive mobile UX
 
 skills:
-  - category: Programming
+  - category: Programming Languages
     skills:
-      - Java
-      - C/C++
+      - C++
       - Python
-      - JavaScript
-      - Tailwind CSS
-      - React
-      - Next.js
-      - ROS 2
-      - Flask
-      - Bash/Shell Scripting
+      - Java
+      - Javascript
+  - category: Frameworks & Technologies
+    skills:
+      - Git, Linux, React, Next.js, Docker, Tailwind CSS, GraphQL, PostgreSQL, Flask
   - category: Machine Learning
     skills:
-      - PyTorch
-      - Transformer Architectures
-      - Deep Learning
-      - NumPy
-      - scikit-learn
-  - category: Tools
-    skills:
-      - Unix/Unix-like Systems (Linux)
-      - Git
-      - CI/CD
-      - Docker
-      - GitHub Actions
+      - PyTorch, Time Series Modelling, Model Evaluation & Tuning
 
 languages:
   # - language: English
