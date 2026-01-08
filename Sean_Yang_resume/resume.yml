@@ -6,9 +6,9 @@ personal:
   phone: null
   url: https://seanyang.me
   titles:
-    - Software Engineering Intern (May-August 2026)
+    - Seeking Software Engineering Internships (16 Weeks; May–Aug 2026)
     - UWaterloo SE 2030
-    - C++, Java, ML, Full-Stack
+    - C++, Python, ML, Full-Stack
   location:
     city: Waterloo
     region: Ontario
@@ -99,18 +99,18 @@ projects:
       - Trained and evaluated models locally on GPU, iterating on architecture under practical compute constraints
 
   
-  - name: Bucket
+  - name: Bucket (Student Dashboard)
     url: https://github.com/aicheye/bucket
     startDate: 2025-11-01
     affiliation: Personal Project
     endDate: "present"
     highlights:
       - Built and deployed a *full-stack student dashboard* using React, Next.js, GraphQL (Hasura), and PostgreSQL
+      - Launched and operated the platform for real users, reaching *40+ monthly active users* with *493+ created resources*
       - Designed backend data models and *GraphQL APIs* to support course management, grade tracking, and real-time queries
       - Implemented *Google OAuth* authentication and *Dockerized microservices* for local development and deployment
-      - Launched and operated the platform for real users, reaching *40+* monthly active users with *493+* created resources
 
-  - name: aicheye's Combat Tagging
+  - name: Combat Tagging (Minecraft Mod)
     url: https://github.com/aicheye/combat-tag
     startDate: 2025-03-01
     affiliation: Personal Project
@@ -155,10 +155,19 @@ skills:
       - Javascript
   - category: Frameworks & Technologies
     skills:
-      - Git, Linux, React, Next.js, Docker, Tailwind CSS, GraphQL, Flask
+      - Git
+      - Linux
+      - React
+      - Next.js
+      - Docker
+      - Tailwind CSS
+      - GraphQL (Hasura)
+      - Flask
   - category: Machine Learning
     skills:
-      - PyTorch, Time Series Modelling, Model Evaluation & Tuning
+      - PyTorch
+      - Time Series Modelling
+      - Model Evaluation & Tuning
 
 languages:
   # - language: English
