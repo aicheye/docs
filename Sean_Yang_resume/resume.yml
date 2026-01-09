@@ -6,9 +6,10 @@ personal:
   phone: null
   url: https://seanyang.me
   titles:
-    - Seeking Software Engineering Internships (16 Weeks; May–Aug 2026)
-    - UWaterloo SE 2030
-    - C++, Python, ML, Full-Stack
+      - 
+    # - Seeking Software Engineering Internships (16 Weeks; May–Aug 2026)
+    # - UWaterloo SE 2030
+    # - C++, Python, ML, Full-Stack
   location:
     city: Waterloo
     region: Ontario
@@ -37,14 +38,15 @@ work:
 education:
   - institution: University of Waterloo
     url: null
-    cgpa: 4.0/4.0
+    cgpa: null
     studyType: Candidate for Bachelor of Software Engineering
     startDate: 2025-09-01
-    endDate: 2030-05-30
+    endDate: 2029-05-30
     location: null
     honors: null
     courses: null
     highlights:
+      - "*Cumulative GPA*: 4.0/4.0 (Term Distinction awarded for first term)"
       - "*Activities*: Watonomous Robotics Engineer, Quizbowl Team"
 
 affiliations:
@@ -56,7 +58,9 @@ affiliations:
     endDate: "present"
     highlights:
       - Developed concurrent robotics software in *C++* using *ROS 2* for autonomous vehicle systems
-      - Built and evaluated predictive models for external agent behavior to improve safety decisions
+      - Built and evaluated rapid-inference *predictive models* for external agent behavior to improve safety decisions
+      - Collaborated in a cross-functional team to integrate perception, world modelling, planning, and action nodes
+      - Implemented unit and integration tests to ensure software reliability in real-world scenarios
       - Maintained *Docker-based development environments* to support reproducible testing and deployment
   - organization: AYJ Coding Club
     url: https://ayjcoding.club/
@@ -110,32 +114,33 @@ projects:
       - Designed backend data models and *GraphQL APIs* to support course management, grade tracking, and real-time queries
       - Implemented *Google OAuth* authentication and *Dockerized microservices* for local development and deployment
 
-  - name: Combat Tagging (Minecraft Mod)
-    url: https://github.com/aicheye/combat-tag
-    startDate: 2025-03-01
-    affiliation: Personal Project
-    endDate: "present"
-    highlights:
-      - Developed and maintained a *Java-based Minecraft mod* enhancing combat mechanics applying event-driven architecture
-      - Reached *700+ downloads* through iterative feature development and community feedback
-  
-  - name: seanyang.me
-    url: https://seanyang.me
-    startDate: 2025-02-01
-    affiliation: Personal Portfolio
-    endDate: "present"
-    highlights:
-      - Designed and deployed a web portfolio using React, Next.js, Tailwind CSS with a lightweight Flask backend
-      - Achieved a *100/100* Lighthouse accessibility score and *1k+ monthly visitors*
-
-  # - name: ezp2p
-  #   url: https://github.com/yourusername/ezp2p
+  # - name: Combat Tagging (Minecraft Mod)
+  #   url: https://github.com/aicheye/combat-tag
+  #   startDate: 2025-03-01
   #   affiliation: Personal Project
+  #   endDate: "present"
   #   highlights:
-  #     - Developed browser-based peer-to-peer multiplayer games using WebRTC DataChannels with a frontend-first architecture
-  #     - Implemented deterministic game state updates with sequence-based ordering to ensure peer convergence without a central server
-  #     - Designed lightweight lobby registry and reconnection flows to support resilient match setup and recovery
-  #     - Applied basic replay and impersonation mitigations using ordered messaging and session metadata
+  #     - Developed and maintained a *Java-based Minecraft mod* enhancing combat mechanics applying event-driven architecture
+  #     - Reached *700+ downloads* through iterative feature development and community feedback
+  
+  # - name: seanyang.me
+  #   url: https://seanyang.me
+  #   startDate: 2025-02-01
+  #   affiliation: Personal Portfolio
+  #   endDate: "present"
+  #   highlights:
+  #     - Designed and deployed a web portfolio using React, Next.js, Tailwind CSS with a lightweight Flask backend
+  #     - Achieved a *100/100* Lighthouse accessibility score and *1k+ monthly visitors*
+
+  - name: ezp2p (Peer-to-Peer Multiplayer Games)
+    url: https://github.com/yourusername/ezp2p
+    startDate: 2024-12-01
+    endDate: "present"
+    affiliation: Personal Project
+    highlights:
+      - Developed browser-based peer-to-peer multiplayer games using *WebRTC DataChannels* with a frontend-first architecture
+      - Designed a modular networking library in *TypeScript* to abstract peer connections and game state synchronization
+      - Implemented deterministic game state updates with sequence-based ordering to ensure peer convergence without a central server
 
   # - name: CampusYap
   #   url: https://git.uwaterloo.ca/se101-fall2025/projects/project_team_23
@@ -160,6 +165,7 @@ skills:
       - React
       - Next.js
       - Docker
+      - ROS 2 (Humble)
       - Tailwind CSS
       - GraphQL (Hasura)
       - Flask
@@ -167,6 +173,7 @@ skills:
     skills:
       - PyTorch
       - Time Series Modelling
+      - Predictive Modelling
       - Model Evaluation & Tuning
 
 languages:
