@@ -108,6 +108,36 @@
     ]}
 }
 
+#let cvaffiliations(info, title: "Experience", isbreakable: true) = {
+    if info.affiliations != none {block[
+        == #title
+        #for org in info.affiliations {
+            // Parse ISO date strings into datetime objects
+            let start = utils.strpdate(org.startDate)
+            let end = utils.strpdate(org.endDate)
+
+            // Create a block layout for each affiliation entry
+            block(width: 100%, breakable: isbreakable)[
+                // Line 1: Organization and Location
+                #if org.url != none [
+                    *#link(org.url)[#org.organization]* #h(1fr) *#org.location* \
+                ] else [
+                    *#org.organization* #h(1fr) *#org.location* \
+                ]
+                // Line 2: Position and Date
+                #text(style: "italic")[#org.position] #h(1fr)
+                #utils.daterange(start, end) \
+                // Highlights or Description
+                #if org.highlights != none {
+                    for hi in org.highlights [
+                        - #eval(hi, mode: "markup")
+                    ]
+                } else {}
+            ]
+        }
+    ]}
+}
+
 #let cvskills(info, title: "Skills", isbreakable: true) = {
     if (info.languages != none) or (info.skills != none) or (info.interests != none) {block(breakable: isbreakable)[
         == #title
@@ -162,9 +192,9 @@
 
 #cvheading(cvdata, uservars)
 #cveducation(cvdata)
-#cvprojects(cvdata)
-#cvaffiliations(cvdata)
 #cvwork(cvdata)
+#cvaffiliations(cvdata)
+#cvprojects(cvdata)
 #cvawards(cvdata)
 #cvskills(cvdata)
 //#cvcertificates(cvdata)
