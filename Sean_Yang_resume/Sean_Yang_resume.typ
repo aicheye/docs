@@ -1,5 +1,4 @@
 #import "@preview/imprecv:1.0.1": *
-#import "@preview/fontawesome:0.6.0": fa-icon
 
 #let cvdata = yaml("resume.yml")
 
@@ -121,7 +120,7 @@
             block(width: 100%, breakable: isbreakable)[
                 // Line 1: Organization and Location
                 #if org.url != none [
-                    *#link(org.url)[#org.organization #fa-icon("arrow-up-right-from-square")]* #h(1fr) *#org.location* \
+                    *#link(org.url)[#org.organization #box(image("up-right-from-square-solid.svg", width: 8pt, height: 8pt))]* #h(1fr) *#org.location* \
                 ] else [
                     *#org.organization* #h(1fr) *#org.location* \
                 ]
@@ -150,7 +149,7 @@
             block(width: 100%, breakable: isbreakable)[
                 // Line 1: Project Name
                 #if project.url != none [
-                    *#link(project.url)[#project.name #fa-icon("arrow-up-right-from-square")]* \
+                    *#link(project.url)[#project.name #box(image("up-right-from-square-solid.svg", width: 8pt, height: 8pt))]* \
                 ] else [
                     *#project.name* \
                 ]
