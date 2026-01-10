@@ -1,4 +1,5 @@
 #import "@preview/imprecv:1.0.1": *
+#import "@preview/fontawesome:0.6.0": fa-icon
 
 #let cvdata = yaml("resume.yml")
 
@@ -120,7 +121,7 @@
             block(width: 100%, breakable: isbreakable)[
                 // Line 1: Organization and Location
                 #if org.url != none [
-                    *#link(org.url)[#org.organization]* #h(1fr) *#org.location* \
+                    *#link(org.url)[#org.organization #fa-icon("arrow-up-right-from-square")]* #h(1fr) *#org.location* \
                 ] else [
                     *#org.organization* #h(1fr) *#org.location* \
                 ]
@@ -133,6 +134,32 @@
                         - #eval(hi, mode: "markup")
                     ]
                 } else {}
+            ]
+        }
+    ]}
+}
+
+#let cvprojects(info, title: "Projects", isbreakable: true) = {
+    if info.projects != none {block[
+        == #title
+        #for project in info.projects {
+            // Parse ISO date strings into datetime objects
+            let start = utils.strpdate(project.startDate)
+            let end = utils.strpdate(project.endDate)
+            // Create a block layout for each project entry
+            block(width: 100%, breakable: isbreakable)[
+                // Line 1: Project Name
+                #if project.url != none [
+                    *#link(project.url)[#project.name #fa-icon("arrow-up-right-from-square")]* \
+                ] else [
+                    *#project.name* \
+                ]
+                // Line 2: Organization and Date
+                #text(style: "italic")[#project.affiliation]  #h(1fr) #utils.daterange(start, end) \
+                // Summary or Description
+                #for hi in project.highlights [
+                    - #eval(hi, mode: "markup")
+                ]
             ]
         }
     ]}

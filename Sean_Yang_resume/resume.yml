@@ -46,14 +46,14 @@ education:
     honors: null
     courses: null
     highlights:
-      - "*Cumulative GPA*: 4.0/4.0 (Term Distinction awarded for first term)"
+      - "*Cumulative GPA*: 4.0/4.0 (Term Distinction awarded 1 of 1 terms)"
       - "*Activities*: Watonomous Robotics Engineer, Quizbowl Team"
 
 affiliations:
   - organization: WATonomous
-    url: https://watonomous.ca/
+    url: https://watonomous.ca/projects/eve
     location: Waterloo, Ontario
-    position: Robotics Software Engineer
+    position: Robotics Software Engineer, EVE Autonomy
     startDate: 2025-09-01
     endDate: "present"
     highlights:
