@@ -97,7 +97,7 @@ projects:
     affiliation: Wunderlab ML Challenge
     highlights:
       - Designed a *Transformer-based time series model* for noisy financial sequences
-      - Outperformed the participant average (0.396 vs 0.309 mean R²) and placing *top 5% of 2900+ competitors*
+      - Outperformed the participant average (0.396 vs 0.309 mean R²) and placing *top 5% of 3000+ competitors*
       - Evaluated sinusoidal vs learnable positional encodings, ultimately combining both to improve long-range dependency capture
       - Tuned model depth and dropout to reduce overfitting, prioritizing validation performance over leaderboard gains
       - Trained and evaluated models locally on GPU, iterating on architecture under practical compute constraints
