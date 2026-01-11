@@ -109,7 +109,7 @@ projects:
     affiliation: Personal Project
     endDate: "present"
     highlights:
-      - Built and deployed a *full-stack student dashboard* using React, Next.js, GraphQL (Hasura), and PostgreSQL
+      - Built and deployed a full-stack student dashboard using React, Next.js, GraphQL (Hasura Engine), and PostgreSQL
       - Launched and operated the platform for real users, reaching *40+ monthly active users* with *493+ created resources*
       - Designed backend data models and *GraphQL APIs* to support course management, grade tracking, and real-time queries
       - Implemented *Google OAuth* authentication and *Dockerized microservices* for local development and deployment
@@ -134,7 +134,7 @@ projects:
 
   - name: ezp2p (Peer-to-Peer Multiplayer Games)
     url: https://github.com/yourusername/ezp2p
-    startDate: 2024-12-01
+    startDate: 2025-12-01
     endDate: "present"
     affiliation: Personal Project
     highlights:
@@ -157,7 +157,8 @@ skills:
       - C++
       - Python
       - Java
-      - Javascript
+      - JavaScript
+      - TypeScript
   - category: Frameworks & Technologies
     skills:
       - Git
@@ -167,11 +168,13 @@ skills:
       - Docker
       - ROS 2 (Humble)
       - Tailwind CSS
-      - GraphQL (Hasura)
+      - GraphQL
       - Flask
+      - SQL
   - category: Machine Learning
     skills:
       - PyTorch
+      - Jupyter
       - Time Series Modelling
       - Predictive Modelling
       - Model Evaluation & Tuning
