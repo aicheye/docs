@@ -100,7 +100,7 @@ projects:
       - Outperformed the participant average (0.396 vs 0.309 mean R²) and placing *top 5% of 3000+ competitors*
       - Evaluated sinusoidal vs learnable positional encodings, ultimately combining both to improve long-range dependency capture
       - Tuned model depth and dropout to reduce overfitting, prioritizing validation performance over leaderboard gains
-      - Trained and evaluated models locally on GPU, iterating on architecture under practical compute constraints
+      - Trained and evaluated models locally on GPU with JupyterLab, iterating on architecture under compute constraints
 
   
   - name: Bucket (Student Dashboard)
@@ -138,7 +138,7 @@ projects:
     endDate: "present"
     affiliation: Personal Project
     highlights:
-      - Developed browser-based peer-to-peer multiplayer games using *WebRTC DataChannels* with a frontend-first architecture
+      - Developed browser-based peer-to-peer multiplayer games using *WebRTC Data Channels* with a frontend-first architecture
       - Designed a modular networking library in *TypeScript* to abstract peer connections and game state synchronization
       - Implemented deterministic game state updates with sequence-based ordering to ensure peer convergence without a central server
 
