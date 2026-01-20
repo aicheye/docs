@@ -9,7 +9,7 @@ Personal repository for documents (lab reports, homework, etc.) written in the [
   - [resume.yml](Sean_Yang_resume/resume.yml)  
   - [up-right-from-square-solid.svg](Sean_Yang_resume/up-right-from-square-solid.svg)  
 - Sean_Yang_transcript/  
-  - [Sean_Yang_Transcript.pdf](Sean_Yang_transcript/Sean_Yang_Transcript.pdf)  
+  - [Sean_Yang_transcript.pdf](Sean_Yang_transcript/Sean_Yang_transcript.pdf)  
 - che102_final_reference/  
   - [che102_final_reference.pdf](che102_final_reference/che102_final_reference.pdf)  
   - [che102_final_reference.typ](che102_final_reference/che102_final_reference.typ)  
