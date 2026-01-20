@@ -2,10 +2,14 @@ Personal repository for documents (lab reports, homework, etc.) written in the [
 
 ## Directory Tree
 - Sean_Yang_resume/  
+  - [Sean_Yang_cover_letter.pdf](Sean_Yang_resume/Sean_Yang_cover_letter.pdf)  
+  - [Sean_Yang_cover_letter.typ](Sean_Yang_resume/Sean_Yang_cover_letter.typ)  
   - [Sean_Yang_resume.pdf](Sean_Yang_resume/Sean_Yang_resume.pdf)  
   - [Sean_Yang_resume.typ](Sean_Yang_resume/Sean_Yang_resume.typ)  
   - [resume.yml](Sean_Yang_resume/resume.yml)  
   - [up-right-from-square-solid.svg](Sean_Yang_resume/up-right-from-square-solid.svg)  
+- Sean_Yang_transcript/  
+  - [Sean_Yang_Transcript.pdf](Sean_Yang_transcript/Sean_Yang_Transcript.pdf)  
 - che102_final_reference/  
   - [che102_final_reference.pdf](che102_final_reference/che102_final_reference.pdf)  
   - [che102_final_reference.typ](che102_final_reference/che102_final_reference.typ)  
