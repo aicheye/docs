@@ -62,6 +62,7 @@ affiliations:
       - Collaborated in a cross-functional team to integrate perception, world modelling, planning, and action nodes
       - Implemented unit and integration tests to ensure software reliability in real-world scenarios
       - Maintained *Docker-based development environments* to support reproducible testing and deployment
+  
   - organization: AYJ Coding Club
     url: https://ayjcoding.club/
     location: North York, Ontario
@@ -102,7 +103,6 @@ projects:
       - Tuned model depth and dropout to reduce overfitting, prioritizing validation performance over leaderboard gains
       - Trained and evaluated models locally on GPU with JupyterLab, iterating on architecture under compute constraints
 
-  
   - name: Bucket (Student Dashboard)
     url: https://github.com/aicheye/bucket
     startDate: 2025-11-01
@@ -113,7 +113,7 @@ projects:
       - Launched and operated the platform for real users, reaching *40+ monthly active users* with *493+ created resources*
       - Designed backend data models and *GraphQL APIs* to support course management, grade tracking, and real-time queries
       - Implemented *Google OAuth* authentication and *Dockerized microservices* for local development and deployment
-
+  
   # - name: Combat Tagging (Minecraft Mod)
   #   url: https://github.com/aicheye/combat-tag
   #   startDate: 2025-03-01
@@ -195,19 +195,7 @@ interests:
   # - Trivia
 
 certificates:
-  # - name: "Learning How to Learn: Powerful mental tools to help you master tough subjects"
-  #   date: 2021-09-01
-  #   issuer: Coursera
-  #   url: https://example.com
-  #   id: "1MPR3CVR3SUM3"
 
 publications:
-  # - name: A convolutional neural network for predicting Greenland glacier melt and glacial water flow
-  #   publisher: Theoretical and Computational Fluid Dynamics
-  #   releaseDate: 2020-09-30
-  #   url: https://example.com
 
 references:
-  # - name: Dr. Jane Austin
-  #   reference: John was a great student. He was always eager to learn new things and was very passionate about his studies. As his mentor, I am proud to say that he was also a great leader and was able to lead his team to victory in the 2020 SCG Bangkok Business Challenge Global Competition.
-  #   url: https://janeaustin.com

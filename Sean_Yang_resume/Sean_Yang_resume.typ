@@ -82,107 +82,115 @@
 }
 
 #let cvawards(info, title: "Honors and Awards", isbreakable: true) = {
-    if info.awards != none {block[
-        == #title
-        #for award in info.awards {
-            // Parse ISO date strings into datetime objects
-            let date = utils.strpdate(award.date)
-            // Create a block layout for each award entry
-            block(width: 100%, breakable: isbreakable)[
-                // Line 1: Award Title and Location
-                #if award.url != none [
-                    *#link(award.url)[#award.title]* #h(1fr) *#award.location* \
-                ] else [
-                    *#award.title* #h(1fr) *#award.location* \
-                ]
-                // Line 2: Issuer and Date
-                Issued by #text(style: "italic")[#award.issuer]  #h(1fr) #date \
-                // Summary or Description
-                #if award.highlights != none {
-                    for hi in award.highlights [
-                        - #eval(hi, mode: "markup")
-                    ]
-                } else {}
+  if info.awards != none {
+    block[
+      == #title
+      #for award in info.awards {
+        // Parse ISO date strings into datetime objects
+        let date = utils.strpdate(award.date)
+        // Create a block layout for each award entry
+        block(width: 100%, breakable: isbreakable)[
+          // Line 1: Award Title and Location
+          #if award.url != none [
+            *#link(award.url)[#award.title]* #h(1fr) *#award.location* \
+          ] else [
+            *#award.title* #h(1fr) *#award.location* \
+          ]
+          // Line 2: Issuer and Date
+          Issued by #text(style: "italic")[#award.issuer]  #h(1fr) #date \
+          // Summary or Description
+          #if award.highlights != none {
+            for hi in award.highlights [
+              - #eval(hi, mode: "markup")
             ]
-        }
-    ]}
+          } else {}
+        ]
+      }
+    ]
+  }
 }
 
 #let cvaffiliations(info, title: "Experience", isbreakable: true) = {
-    if info.affiliations != none {block[
-        == #title
-        #for org in info.affiliations {
-            // Parse ISO date strings into datetime objects
-            let start = utils.strpdate(org.startDate)
-            let end = utils.strpdate(org.endDate)
+  if info.affiliations != none {
+    block[
+      == #title
+      #for org in info.affiliations {
+        // Parse ISO date strings into datetime objects
+        let start = utils.strpdate(org.startDate)
+        let end = utils.strpdate(org.endDate)
 
-            // Create a block layout for each affiliation entry
-            block(width: 100%, breakable: isbreakable)[
-                // Line 1: Organization and Location
-                #if org.url != none [
-                    *#link(org.url)[#org.organization #box(image("up-right-from-square-solid.svg", width: 8pt, height: 8pt))]* #h(1fr) *#org.location* \
-                ] else [
-                    *#org.organization* #h(1fr) *#org.location* \
-                ]
-                // Line 2: Position and Date
-                #text(style: "italic")[#org.position] #h(1fr)
-                #utils.daterange(start, end) \
-                // Highlights or Description
-                #if org.highlights != none {
-                    for hi in org.highlights [
-                        - #eval(hi, mode: "markup")
-                    ]
-                } else {}
+        // Create a block layout for each affiliation entry
+        block(width: 100%, breakable: isbreakable)[
+          // Line 1: Organization and Location
+          #if org.url != none [
+            *#link(org.url)[#org.organization #box(image("up-right-from-square-solid.svg", width: 8pt, height: 8pt))]* #h(1fr) *#org.location* \
+          ] else [
+            *#org.organization* #h(1fr) *#org.location* \
+          ]
+          // Line 2: Position and Date
+          #text(style: "italic")[#org.position] #h(1fr)
+          #utils.daterange(start, end) \
+          // Highlights or Description
+          #if org.highlights != none {
+            for hi in org.highlights [
+              - #eval(hi, mode: "markup")
             ]
-        }
-    ]}
+          } else {}
+        ]
+      }
+    ]
+  }
 }
 
 #let cvprojects(info, title: "Projects", isbreakable: true) = {
-    if info.projects != none {block[
-        == #title
-        #for project in info.projects {
-            // Parse ISO date strings into datetime objects
-            let start = utils.strpdate(project.startDate)
-            let end = utils.strpdate(project.endDate)
-            // Create a block layout for each project entry
-            block(width: 100%, breakable: isbreakable)[
-                // Line 1: Project Name
-                #if project.url != none [
-                    *#link(project.url)[#project.name #box(image("up-right-from-square-solid.svg", width: 8pt, height: 8pt))]* \
-                ] else [
-                    *#project.name* \
-                ]
-                // Line 2: Organization and Date
-                #text(style: "italic")[#project.affiliation]  #h(1fr) #utils.daterange(start, end) \
-                // Summary or Description
-                #for hi in project.highlights [
-                    - #eval(hi, mode: "markup")
-                ]
-            ]
-        }
-    ]}
+  if info.projects != none {
+    block[
+      == #title
+      #for project in info.projects {
+        // Parse ISO date strings into datetime objects
+        let start = utils.strpdate(project.startDate)
+        let end = utils.strpdate(project.endDate)
+        // Create a block layout for each project entry
+        block(width: 100%, breakable: isbreakable)[
+          // Line 1: Project Name
+          #if project.url != none [
+            *#link(project.url)[#project.name #box(image("up-right-from-square-solid.svg", width: 8pt, height: 8pt))]* \
+          ] else [
+            *#project.name* \
+          ]
+          // Line 2: Organization and Date
+          #text(style: "italic")[#project.affiliation]  #h(1fr) #utils.daterange(start, end) \
+          // Summary or Description
+          #for hi in project.highlights [
+            - #eval(hi, mode: "markup")
+          ]
+        ]
+      }
+    ]
+  }
 }
 
 #let cvskills(info, title: "Skills", isbreakable: true) = {
-    if (info.languages != none) or (info.skills != none) or (info.interests != none) {block(breakable: isbreakable)[
-        == #title
-        #if (info.languages != none) [
-            #let langs = ()
-            #for lang in info.languages {
-                langs.push([#lang.language (#lang.fluency)])
-            }
-            - *Languages*: #langs.join(", ")
+  if (info.languages != none) or (info.skills != none) or (info.interests != none) {
+    block(breakable: isbreakable)[
+      == #title
+      #if (info.languages != none) [
+        #let langs = ()
+        #for lang in info.languages {
+          langs.push([#lang.language (#lang.fluency)])
+        }
+        - *Languages*: #langs.join(", ")
+      ]
+      #if (info.skills != none) [
+        #for group in info.skills [
+          - *#group.category*: #group.skills.join(", ")
         ]
-        #if (info.skills != none) [
-            #for group in info.skills [
-                - *#group.category*: #group.skills.join(", ")
-            ]
-        ]
-        #if (info.interests != none) [
-            - *Interests*: #info.interests.join(", ")
-        ]
-    ]}
+      ]
+      #if (info.interests != none) [
+        - *Interests*: #info.interests.join(", ")
+      ]
+    ]
+  }
 }
 
 #let endnote(uservars) = {
