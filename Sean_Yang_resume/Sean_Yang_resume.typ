@@ -121,12 +121,12 @@
 
         // Create a block layout for each affiliation entry
         block(width: 100%, breakable: isbreakable)[
-          // Line 2: Position and Date
+          // Line 1: Position and Date
           #text[*#org.position*] #h(1fr)
           #utils.daterange(start, end) \
-          // Line 1: Organization and Location
+          // Line 2: Organization and Location
           #if org.url != none [
-            #link(org.url)[#org.organization #box(image("up-right-from-square-solid.svg", width: 8pt, height: 8pt))] #h(1fr) *#org.location* \
+            #text(style: "italic")[#link(org.url)[#org.organization #box(image("up-right-from-square-solid.svg", width: 8pt, height: 8pt))]] #h(1fr) *#org.location* \
           ] else [
             *#org.organization* #h(1fr) *#org.location* \
           ]
