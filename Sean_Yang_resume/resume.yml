@@ -140,9 +140,9 @@ projects:
   #     - Achieved a *100/100* Lighthouse accessibility score and *1k+ monthly visitors*
 
   - name: ezp2p (Peer-to-Peer Multiplayer Games)
-    url: https://github.com/yourusername/ezp2p
-    startDate: 2024-12-01
-    endDate: 2025-02-01
+    url: https://github.com/aicheye/ezp2p
+    startDate: 2024-06-01
+    endDate: 2025-12-01
     affiliation: Personal Project
     highlights:
       - Developed browser-based peer-to-peer multiplayer games using *WebRTC Data Channels* with a frontend-first architecture
