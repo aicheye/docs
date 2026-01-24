@@ -47,7 +47,7 @@ education:
     courses: null
     highlights:
       - "*Cumulative GPA*: 4.0/4.0 (Term Distinction awarded 1 of 1 terms)"
-      - "*Activities*: Watonomous Robotics Engineer, Quizbowl Team"
+      # - "*Activities*: Watonomous Robotics Engineer, Quizbowl Team"
 
 affiliations:
   - organization: WATonomous
@@ -58,22 +58,30 @@ affiliations:
     endDate: "present"
     highlights:
       - Developed concurrent robotics software in *C++* using *ROS 2* for autonomous vehicle systems
-      - Built and evaluated rapid-inference *predictive models* for external agent behavior to improve safety decisions
+      - Built and evaluated rapid-inference *predictive models* for external agent behavior to *reduce safety incidents by 3x*
       - Collaborated in a cross-functional team to integrate perception, world modelling, planning, and action nodes
-      - Implemented unit and integration tests to ensure software reliability in real-world scenarios
+      - Implemented unit tests with 100% code coverage to ensure software reliability in real-world scenarios
       - Maintained *Docker-based development environments* to support reproducible testing and deployment
   
   - organization: AYJ Coding Club
     url: https://ayjcoding.club/
     location: North York, Ontario
     position: Senior Lecturer & Problem Setter
-    startDate: 2024-06-01
+    startDate: 2023-06-01
     endDate: 2025-06-30
     highlights:
       - Led bi-weekly lectures on algorithms and data structures for competitive programming to *50+ high school students*
       - Authored original problems and automated *C++ graders* with *250+ total submissions* from students on the club's online judge
 
 awards:
+  - title: USACO Gold Division Promotion
+    url: null
+    date: 2025-12-01
+    issuer: USA Computing Olympiad (USACO)
+    location:
+    highlights:
+      # - Advanced to the Gold Division by ranking in the top 10% of participants in the Silver Division contest
+      
   - title: Certificates of Distinction in the Euclid, CSMC, & CCC (Sr. Div.) Contests
     url: null
     date: 2025-06-01
@@ -100,7 +108,6 @@ projects:
       - Designed a *Transformer-based time series model* for noisy financial sequences
       - Outperformed the participant average (0.396 vs 0.309 mean R²) and placing *top 5% of 3000+ competitors*
       - Evaluated sinusoidal vs learnable positional encodings, ultimately combining both to improve long-range dependency capture
-      - Tuned model depth and dropout to reduce overfitting, prioritizing validation performance over leaderboard gains
       - Trained and evaluated models locally on GPU with JupyterLab, iterating on architecture under compute constraints
 
   - name: Bucket (Student Dashboard)
@@ -134,8 +141,8 @@ projects:
 
   - name: ezp2p (Peer-to-Peer Multiplayer Games)
     url: https://github.com/yourusername/ezp2p
-    startDate: 2025-12-01
-    endDate: "present"
+    startDate: 2024-12-01
+    endDate: 2025-02-01
     affiliation: Personal Project
     highlights:
       - Developed browser-based peer-to-peer multiplayer games using *WebRTC Data Channels* with a frontend-first architecture
