@@ -50,10 +50,10 @@ education:
       # - "*Activities*: Watonomous Robotics Engineer, Quizbowl Team"
 
 affiliations:
-  - organization: WATonomous
+  - organization: WATonomous (EVE Autonomy)
     url: https://watonomous.ca/projects/eve
     location: Waterloo, Ontario
-    position: Robotics Software Engineer, EVE Autonomy
+    position: Robotics Software Engineer
     startDate: 2025-09-01
     endDate: "present"
     highlights:
