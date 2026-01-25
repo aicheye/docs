@@ -170,11 +170,12 @@ skills:
   - category: Frameworks & Technologies
     skills:
       - Git
+      - Agile Methodologies
       - Linux
       - React
       - Next.js
       - Docker
-      - ROS 2 (Humble)
+      - ROS 2
       - Tailwind CSS
       - GraphQL
       - Flask
