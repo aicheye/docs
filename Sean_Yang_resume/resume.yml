@@ -99,13 +99,23 @@ awards:
       # - Recognized among top students in Computer Science and Chemistry over four years of study
 
 projects:
+  - name: CRusTTY (C Interpreter/Debugger)
+    url: https://github.com/aicheye/crustty
+    startDate: 2025-12-01
+    endDate: "present"
+    affiliation: Personal Project
+    highlights:
+      - Built a *Rust-based C interpreter* from scratch with debugging and memory visualization using a recursive descent parser
+      - Implemented a *snapshot-based execution engine* enabling bidirectional stepping through program execution history
+      - Wrote *GitHub Actions* jobs to automate testing and building, preventing regressions and streamlining release management
+  
   - name: Wundernn Market State Prediction
     url: https://github.com/aicheye/wundernn
     startDate: 2025-10-01
     endDate: 2025-12-15
     affiliation: Wunderlab ML Challenge
     highlights:
-      - Designed a *Transformer-based time series model* for noisy financial sequences
+      - Designed a *Transformer-based time series model* for noisy financial sequences in *Python* using *PyTorch*
       - Outperformed the participant average (0.396 vs 0.309 mean R²) and placing *top 5% of 3000+ competitors*
       - Evaluated sinusoidal vs learnable positional encodings, ultimately combining both to improve long-range dependency capture
       - Trained and evaluated models locally on GPU with JupyterLab, iterating on architecture under compute constraints
@@ -139,15 +149,15 @@ projects:
   #     - Designed and deployed a web portfolio using React, Next.js, Tailwind CSS with a lightweight Flask backend
   #     - Achieved a *100/100* Lighthouse accessibility score and *1k+ monthly visitors*
 
-  - name: ezp2p (Peer-to-Peer Multiplayer Games)
-    url: https://github.com/aicheye/ezp2p
-    startDate: 2024-06-01
-    endDate: 2025-12-01
-    affiliation: Personal Project
-    highlights:
-      - Developed browser-based peer-to-peer multiplayer games using *WebRTC Data Channels* with a frontend-first architecture
-      - Designed a modular networking library in *TypeScript* to abstract peer connections and game state synchronization
-      - Implemented deterministic game state updates with sequence-based ordering to ensure peer convergence without a central server
+  # - name: ezp2p (Peer-to-Peer Multiplayer Games)
+  #   url: https://github.com/aicheye/ezp2p
+  #   startDate: 2024-06-01
+  #   endDate: 2025-12-01
+  #   affiliation: Personal Project
+  #   highlights:
+  #     - Developed browser-based peer-to-peer multiplayer games using *WebRTC Data Channels* with a frontend-first architecture
+  #     - Designed a modular networking library in *TypeScript* to abstract peer connections and game state synchronization
+  #     - Implemented deterministic game state updates with sequence-based ordering to ensure peer convergence without a central server
 
   # - name: CampusYap
   #   url: https://git.uwaterloo.ca/se101-fall2025/projects/project_team_23
