@@ -2,8 +2,6 @@ Personal repository for documents (lab reports, homework, etc.) written in the [
 
 ## Directory Tree
 - Sean_Yang_resume/  
-  - [Sean_Yang_cover_letter.pdf](Sean_Yang_resume/Sean_Yang_cover_letter.pdf)  
-  - [Sean_Yang_cover_letter.typ](Sean_Yang_resume/Sean_Yang_cover_letter.typ)  
   - [Sean_Yang_resume.pdf](Sean_Yang_resume/Sean_Yang_resume.pdf)  
   - [Sean_Yang_resume.typ](Sean_Yang_resume/Sean_Yang_resume.typ)  
   - [resume.yml](Sean_Yang_resume/resume.yml)  
@@ -43,3 +41,4 @@ Personal repository for documents (lab reports, homework, etc.) written in the [
     - [work.typ](ucm/sections/work.typ)  
   - [ucm.pdf](ucm/ucm.pdf)  
   - [ucm.typ](ucm/ucm.typ)  
+- [.gitignore](.gitignore)  
